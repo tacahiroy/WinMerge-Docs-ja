@@ -9,18 +9,22 @@
       <qandaentry>
         <question>
           <para>なぜ、
-          <filename>WinMerge.exe</filename> と
-          <filename>WinMergeU.exe</filename>の二つの実行ファイルがあるの?<indexterm>
+            <filename>WinMerge.exe</filename> と
+            <filename>WinMergeU.exe</filename>の二つの実行ファイルがあるの?
+            <indexterm>
               <primary>WinMerge executables, Unicode and ANSI</primary>
-            </indexterm><indexterm>
+            </indexterm>
+
+            <indexterm>
               <primary>Unicode</primary>
-
               <secondary>WinMerge support</secondary>
-            </indexterm><indexterm>
+            </indexterm>
+
+            <indexterm>
               <primary>ANSI</primary>
-
               <secondary>WinMerge support</secondary>
-            </indexterm></para>
+            </indexterm>
+          </para>
         </question>
 
         <answer>
@@ -61,11 +65,12 @@
         <question>
           <para>あのスプラッシュ画面が邪魔なんだけど消せないの?<indexterm>
               <primary>splash screen, turning off</primary>
-            </indexterm></para>
+          </indexterm></para>
         </question>
 
         <answer>
-          <para>WinMergeメニューの、編集(E) → 設定(O)とクリックしてください。<menuchoice>
+          <para>WinMergeメニューの、編集(E) → 設定(O)とクリックしてください。
+            <menuchoice>
               <guimenu>編集(E)</guimenu>
               <guisubmenu>設定(O)</guisubmenu>
             </menuchoice>。
@@ -76,17 +81,19 @@
 
       <qandaentry>
         <question>
-          <para>フォルダ比較をしたいんだけど、参照ダイアログでフォルダが選択できないよ。<indexterm>
+          <para>フォルダ比較をしたいんだけど、参照ダイアログでフォルダが選択できないよ。
+            <indexterm>
               <primary>folders</primary>
-
               <secondary>selecting in Select Files or Folders dialog</secondary>
-            </indexterm></para>
+            </indexterm>
+          </para>
         </question>
 
         <answer>
           <para>
             比較したいフォルダを参照してください。
-            ファイルやサブフォルダを選択せずに、<guilabel>ファイル名(M)</guilabel>欄に<literal>Folder Selection</literal>と表示されている時、
+            ファイルやサブフォルダを選択せずに、
+            <guilabel>ファイル名(M)</guilabel>欄に<literal>Folder Selection</literal>と表示されている時、
             <guibutton>開く(O)</guibutton>をクリックしてください。
             もし、既にファイルやサブフォルダを選択している場合、<guilabel>ファイル名(M)</guilabel>欄に、適当な文字を入力し、
             <guibutton>開く(O)</guibutton>ボタンをクリックしてください。
@@ -97,8 +104,11 @@
 
       <qandaentry>
         <question>
-          <para>WinMergeは3つのファイルのマージをサポートしていないの? ときどき
-          <wordasword>3-way merge</wordasword>)と呼ばれていて、一つのファイルを祖先とするやつだ。この機能はバージョン管理に便利だと思うよ!(※日本語版は一部実装)</para>
+          <para>
+            WinMergeは3つのファイルのマージをサポートしていないの?
+            ときどき<wordasword>3-way merge</wordasword>と呼ばれていて、一つのファイルを祖先とするやつだ。
+            この機能はバージョン管理に便利だと思うよ!(※日本語版は一部実装)
+          </para>
         </question>
 
         <answer>
@@ -106,14 +116,15 @@
             残念ながらサポートしていません。
             私たちは、それが良い機能であることを認識していますが、近いうちに実装する予定はありません。
             いくつかの制約がありますが、二つのWinMergeインスタンスを起動するか、コマンドラインの三つめのパス・パラメータを使用することにより、この問題を回避できます。
-            さらなる情報は、<xref linkend="コマンドライン" />を参照。
+            さらなる情報は、<xref linkend="コマンドライン" />を参照してください。
           </para>
         </answer>
       </qandaentry>
 
       <qandaentry>
         <question>
-          <para>Windows以外のOSにWinMergeを移植する予定はないの?
+          <para>
+            Windows以外のOSにWinMergeを移植する予定はないの?
           </para>
         </question>
 
@@ -121,22 +132,25 @@
           <para>
             現在はありません。
             誰かクロスプラットフォームサポート(<ulink url="http://www.wxwidgets.org/">wxWidgets</ulink>使用)を手伝いたい人がいるなら、
-            私たちは、もちろんそれに興味があります。
+            私たちは、もちろん、それに興味があります。
           </para>
         </answer>
       </qandaentry>
 
       <qandaentry>
         <question>
-          <para>なぜCVS統合機能とかがないの?<indexterm>
-              <primary>version control systems</primary>
+          <para>
+            なぜCVS統合機能とかがないの?
+            <indexterm>
+              <primary>バージョン管理システム</primary>
+              <secondary>との統合</secondary>
+            </indexterm>
 
-              <secondary>integration with</secondary>
-            </indexterm><indexterm>
-              <primary>integration</primary>
-
+            <indexterm>
+              <primary>統合</primary>
               <secondary>with version control systems</secondary>
-            </indexterm></para>
+            </indexterm>
+          </para>
         </question>
 
         <answer>
@@ -153,14 +167,18 @@
 
       <qandaentry>
         <question>
-          <para>MRU (リスト)てなに?<indexterm>
-              <primary>MRU list</primary>
-            </indexterm></para>
+          <para>
+            MRU (リスト)てなに?
+            <indexterm>
+              <primary>MRUリスト</primary>
+            </indexterm>
+          </para>
         </question>
 
         <answer>
           <para>
-            MRUは<quote>Most Recently Used</quote>(最近使ったファイル)の省略形で、ファイル及びフォルダ選択ダイアログの履歴一覧に関係しています。
+            MRUは<quote>Most Recently Used</quote>(最近使ったファイル)の省略形で、
+            ファイル及びフォルダ選択ダイアログの履歴一覧に関係しています。
             この一覧は、最近使用した20のパスを含みます。
           </para>
         </answer>
@@ -168,9 +186,12 @@
 
       <qandaentry>
         <question>
-          <para>Open Office のファイルは比較できる?<indexterm>
-              <primary>OpenOffice, opening files in WinMerge</primary>
-            </indexterm></para>
+          <para>
+            OpenOfficeのファイルは比較できる?
+            <indexterm>
+              <primary>WinMergeでOpenOfficeのファイルを開く</primary>
+            </indexterm>
+          </para>
         </question>
 
         <answer>
@@ -182,7 +203,8 @@
           <itemizedlist>
             <listitem>
               <para>
-                <xref linkend="7-Zip と アーカイブサポート" />で説明される、アーカイブサポートをインストールしてください。
+                <xref linkend="7-Zip と アーカイブサポート" />で説明されている、
+                アーカイブサポートをインストールしてください。
               </para>
             </listitem>
 
@@ -199,14 +221,22 @@
 
       <qandaentry>
         <question>
-          <para>なんで大きいファイルを比較するとたまに、フォルダ比較では差異があるといっているのに、ファイル比較では同一だといわれるの?
+          <para>
+            なんで大きいファイルを比較するとたまに、フォルダ比較では差異があるといっているのに、
+            ファイル比較では同一だといわれるの?
           </para>
         </question>
 
         <answer>
           <para>
-            これは、WinMergeが大きなファイルを比較する時は、常に<guilabel>クイックコンテンツ</guilabel>を使用しているからです。
+            これは、WinMergeが大きなファイルを比較する時は、
+            常に<guilabel>クイックコンテンツ</guilabel>を使用しているからです。
             この方法は、WinMergeで大きなファイルをより効率的に比較することを可能にします。
+
+            <!-- FIXME -->
+            このことをテストするために、大きいファイルのために<guilabel>クイックコンテンツ</guilabel>
+            しきい値をあげてみることができます。
+
             To test if this is causing the behavior you're seeing, you can try raising the
             <guilabel>クイックコンテンツ</guilabel> threshold for large files.
             <xref linkend="フォルダ比較操作の開始" />での、この方法の議論を見てください。
@@ -217,18 +247,18 @@
       <qandaentry>
         <question>
           <para>WinMergeが
-          <filename>CompareMSWordFiles.dll</filename>や
-          <filename>CompareMSExcelFiles.dll</filename>が読み込めないとエラーを表示するよ!(クラッシュすることも!)<indexterm>
+            <filename>CompareMSWordFiles.dll</filename>や
+            <filename>CompareMSExcelFiles.dll</filename>が読み込めないとエラーを表示するよ!(クラッシュすることも!)<indexterm>
               <primary>Visual Basic dlls for plugins</primary>
-            </indexterm><indexterm>
+              </indexterm><indexterm>
               <primary>plugins</primary>
 
               <secondary>Visual Basic dlls</secondary>
-            </indexterm><indexterm>
+              </indexterm><indexterm>
               <primary>CompareMSWordFiles.dll plugin file</primary>
-            </indexterm><indexterm>
+              </indexterm><indexterm>
               <primary>CompareMSExcelFiles.dll plugin file</primary>
-            </indexterm></para>
+          </indexterm></para>
         </question>
 
         <answer>
@@ -262,16 +292,18 @@
     <qandaset>
       <qandaentry>
         <question>
-          <para>WinMergeがDLL(
-          (<filename>mfc71.dll</filename>, <filename>mfc71u.dll</filename>,
-          <filename>msvcr71.dll</filename>, 
-          <filename>msvcp71.dll</filename>)がないって言って動かないよ</para>
+          <para>WinMergeがDLL
+            (<filename>mfc71.dll</filename>, <filename>mfc71u.dll</filename>,
+            <filename>msvcr71.dll</filename>, 
+            <filename>msvcp71.dll</filename>)がないって言って動かないよ</para>
         </question>
 
         <answer>
           <para>
-            WinMerge を書庫(zipまたは7z)ファイルよりインストールする時、幾つかのランタイムパッケージも必要です。
-            詳細は、インストールヘルプの<xref linkend="圧縮ファイルからのインストール" />をご覧ください。
+            WinMerge を書庫(zipまたは7z)ファイルよりインストールする時、
+            幾つかのランタイムパッケージも必要です。
+            詳細は、インストールヘルプの
+            <xref linkend="圧縮ファイルからのインストール" />をご覧ください。
           </para>
         </answer>
       </qandaentry>
@@ -285,7 +317,7 @@
       <qandaentry>
         <question>
           <para>なんで僕のファイルは全行に差異があると色づけされるの?
-          全行同じはずだよ。</para>
+            全行同じはずだよ。</para>
         </question>
 
         <answer>
@@ -293,7 +325,7 @@
             おそらく、ファイルの改行コードが異なっているからです(例えば、WindowsとUnix)。
             デフォルト設定では、WinMergeは、改行コードを比較します。
             無効にするには、<menuchoice><guimenu>編集(E)</guimenu> → <guimenuitem>設定(O)</guimenuitem></menuchoice>
-           とクリック。「比較」カテゴリの、<guilabel>改行文字の違いを無視する(R) (Windows/Unix/Mac)</guilabel>にチェックしてください。
+            とクリック。「比較」カテゴリの、<guilabel>改行文字の違いを無視する(R) (Windows/Unix/Mac)</guilabel>にチェックしてください。
           </para>
         </answer>
       </qandaentry>
@@ -314,7 +346,7 @@
               <guimenu>表示(V)</guimenu>
 
               <guimenuitem>フォント選択(F)</guimenuitem>
-            </menuchoice>をクリックし、別のフォントを選んでください。</para>
+          </menuchoice>をクリックし、別のフォントを選んでください。</para>
         </answer>
       </qandaentry>
 
@@ -333,7 +365,7 @@
           <para>
             [?]ANSIのファイルに関しては、多分コードページの問題です。
             障害調査をする為に、<menuchoice><guimenu>編集(E)</guimenu> → <guimenuitem>設定(O)</guimenuitem></menuchoice>とクリックしてください。
-            「コードページ」カテゴリにある<gulabel>ファイルのコードページ情報を検出する</gulabel>がチェックされているか確認してください。
+            「コードページ」カテゴリにある<guilabel>ファイルのコードページ情報を検出する</guilabel>がチェックされているか確認してください。
             もしチェックされていたら、チェックを外し、<guibutton>OK</guibutton>をクリックし、問題が解決するかを確認してください。
           </para>
         </answer>
@@ -359,17 +391,19 @@
 
         <answer>
           <para>
-            <guilabel>(自動)再スキャン</guilabel>が可能な時(「設定」の「エディタ」カテゴリ)、WinMergeは、ファイルが編集されている間、再スキャンをずらします。
-            つまり、あなたが編集を止めるまで、再スキャンは起こりません。
-            ズレが無い場合、WinMergeは文字をタイプする毎にファイルをスキャンし、編集作業を遅くさせるでしょう。
-            このズレは、(再スキャンに数秒かかるような)大きなファイルの編集を特に改善します。
+            <guilabel>(自動)再スキャン</guilabel>が可能な時(「設定」の「エディタ」カテゴリ)、
+            WinMergeは、ファイルが編集されている間、再スキャンを遅延させます。
+            つまり、編集を止めるまで、再スキャンは起こりません。
+            この遅延が無い場合、WinMergeは文字をタイプする毎にファイルをスキャンし、編集作業を遅くさせるでしょう。
+            この遅延は、特に(再スキャンに数秒かかるような)大きなファイルの編集を改善します。
           </para>
         </answer>
       </qandaentry>
 
       <qandaentry>
         <question>
-          <para>ファイル比較ウインドウのファイルペインからファイルを印刷できる?
+          <para>
+            ファイル比較ウインドウのファイルペインからファイルを印刷できる?
           </para>
         </question>
 
@@ -377,14 +411,16 @@
           <para>
             できます。
             基本的な印刷をサポートしています。
-            <menuchoice><guimenu>ファイル(F)</guimenu> → <guimenuitem>印刷(P)</guimenuitem></menuchoice>をクリックしてください。
+            <menuchoice>
+              <guimenu>ファイル(F)</guimenu> → <guimenuitem>印刷(P)</guimenuitem></menuchoice>をクリックしてください。
           </para>
         </answer>
       </qandaentry>
 
       <qandaentry>
         <question>
-          <para>エディタで類似行を非表示にできないの? (差異のある行だけ表示したい)(日本語版では実装)
+          <para>
+            エディタで類似行を非表示にできないの? (差異のある行だけ表示したい)(日本語版では実装)
           </para>
         </question>
 
@@ -431,7 +467,8 @@
 
       <qandaentry>
         <question>
-          <para>「開く」ダイアログの履歴がテンポラリファイルで埋まらないようにできないかな?
+          <para>
+            「開く」ダイアログの履歴がテンポラリファイルで埋まらないようにできないかな?
           </para>
         </question>
 
@@ -445,7 +482,8 @@
 
       <qandaentry>
         <question>
-          <para>でも、使っているプログラムがコマンドライン引数をサポートしてないよう！
+          <para>
+            でも、使っているプログラムがコマンドライン引数をサポートしてないよう！
           </para>
         </question>
 
@@ -495,15 +533,18 @@
             <listitem>
               <!-- FIXME -->
               <para>If the error is something like: <emphasis><errortext>7-zip
-              x.xx missing / Plugin present</errortext></emphasis>, then you
-              probably installed 7-Zip using the MSI installer. Some 7-Zip MSI
-              installers do not install all the files that WinMerge needs
-              (specifically, <filename>7zip_pad.xml</filename> in the 7-Zip
-              program folder). Download and run the <filename>EXE</filename>
-              version of the 7-Zip installer.</para>
+                    x.xx missing / Plugin present</errortext></emphasis>, then you
+                probably installed 7-Zip using the MSI installer. Some 7-Zip MSI
+                installers do not install all the files that WinMerge needs
+                (specifically, <filename>7zip_pad.xml</filename> in the 7-Zip
+                program folder). Download and run the <filename>EXE</filename>
+                version of the 7-Zip installer.</para>
 
-              <para>次の様なエラーの場合: <emphasis><errortext>7-zip
-                    x.xx が見つかりません / プラグインが表示した場合、</errortext></emphasis>, 
+              <para>
+                次の様なエラーの場合: 
+                <emphasis>
+                  <errortext>7-zip x.xx が見つかりません / プラグインが表示した場合、</errortext>
+                </emphasis>, 
                 MSIインストーラを使用して7-Zipがインストールされたかもしれません。
                 いくつかの7-ZipのMSIインストーラは、WinMergeが必要とするすべてのファイル
                 (具体的には、7-Zipのプログラムフォルダ中の、<filename>7zip_pad.xml</filename>)
@@ -517,14 +558,17 @@
 
       <qandaentry>
         <question>
-          <para>WinMergeの開発者がパッチをなげる時につかう「ペリースタイル」なパッチファイルをどうやって開けばいいの?
-          <indexterm>
+          <para>
+            WinMergeの開発者がパッチをなげる時につかう「ペリースタイル」なパッチファイルをどうやって開けばいいの?
+            <indexterm>
               <primary>ペリースタイルなパッチ</primary>
-            </indexterm></para>
+            </indexterm>
+          </para>
         </question>
 
         <answer>
-          <para>ペリースタイルのパッチは、別のフォルダに、元ファイルと変更後のファイルが入っているzipファイルです。
+          <para>
+            ペリースタイルのパッチは、別のフォルダに、元ファイルと変更後のファイルが入っているzipファイルです。
             WinMergeは、(驚くべきことに！)これらのファイルの取扱いを内部的にサポートしています。
             比較操作を実行し、zipファイルを左右両方とも選択してください。WinMergeは、zipファイルの内容をフォルダ比較ウィンドウに展開し、
             元ファイルと変更後ファイルを比較します。
@@ -534,7 +578,9 @@
 
       <qandaentry>
         <question>
-          <para>7-Zipはインストールしたくないなあ。他の圧縮・解凍ツール(WinZipやWinRar等)は使えないの?
+          <para>
+            7-Zipはインストールしたくないなあ。
+            他の圧縮・解凍ツール(WinZipやWinRar等)は使えないの?
           </para>
         </question>
 
@@ -545,77 +591,98 @@
 
       <qandaentry>
         <question>
-          <para>WinMergeは、標準的じゃない拡張子のアーカイブファイルを開けないの?(例えば、形式はzipな.jar ファイルとか)</para>
+          <para>
+            WinMergeは、標準的じゃない拡張子のアーカイブファイルを開けないの?
+            (例えば、形式はzipな.jar ファイルとか)
+          </para>
         </question>
 
         <answer>
-          <para>はい。 <guibutton>設定</guibutton>ボタンをクリック(または、
-          <menuchoice>
+          <para>
+            はい。 
+            <guibutton>設定</guibutton>ボタンをクリック
+            (または、<menuchoice>
               <guimenu>編集(E)</guimenu>
-
               <guimenuitem>設定(O)</guimenuitem>とクリック)してください。
-            </menuchoice>). 「アーカイブサポート」カテゴリの、
-          <guilabel>ファイルのシグネチャからアーカイブの種類を検出する(D)</guilabel>
-          オプションを有効にしてください。</para>
+            </menuchoice>)。 
+            「アーカイブサポート」カテゴリの、
+            <guilabel>ファイルのシグネチャからアーカイブの種類を検出する(D)</guilabel>
+            オプションを有効にしてください。
+          </para>
         </answer>
       </qandaentry>
     </qandaset>
   </section>
 
   <section id="Faq_encoding">
-    <title>テキストエンコーディング (コードページ)<indexterm>
+    <title>
+      テキストエンコーディング (コードページ)
+      <indexterm>
         <primary>ANSI</primary>
-
         <secondary>メモ帳を使用して検出する</secondary>
-      </indexterm></title>
+      </indexterm>
+    </title>
 
     <qandaset>
       <qandaentry>
         <question id="Faq_detectencoding">
-          <para id="Faq_detectencoding_text">どうしたら僕のファイルのコードページがわかるの?
+          <para id="Faq_detectencoding_text">
+            どうしたら僕のファイルのコードページがわかるの?
           </para>
         </question>
 
-        <!-- TODO -->
         <answer>
-          <para>メモ帳でファイルを開いてください(例えば、<menuchoice>
+          <para>
+            メモ帳でファイルを開いてください(例えば、
+            <menuchoice>
               <guimenu>スタート</guimenu>
-
               <guisubmenu>すべてのプログラム</guisubmenu>
-
               <guisubmenu>アクセサリ</guisubmenu>
-
               <guimenuitem>メモ帳</guimenuitem>
-            </menuchoice>)をクリック)。<menuchoice>
-              <guimenu>ファイル(F)</guimenu>
+            </menuchoice>をクリック)。
 
+            <menuchoice>
+              <guimenu>ファイル(F)</guimenu>
               <guimenuitem>名前を付けて保存(A)</guimenuitem>
             </menuchoice>とクリックし、保存ダイアログで
-          <guilabel>Encoding</guilabel> item at the dropdown list. The possible
-          values include:</para>
+
+            <!-- FIXME -->
+            <guilabel>Encoding</guilabel> item at the dropdown list. The possible
+            values include:
+          </para>
 
           <itemizedlist>
             <listitem>
-              <para><guilabel>ANSI</guilabel>: The file is apparently in the
-              local Windows codepage. If the file is entirely in English and
-              normal punctuation, then the file is also in ASCII.</para>
-            </listitem>
-
-            <listitem>
+              <!-- FIXME -->
               <para>
-                <guilabel>Unicode</guilabel>: そのファイルは、多分、WindowsのデフォルトのUnicodeエンコーティングである、UCS-2LEです。
+                <guilabel>ANSI</guilabel>: The file is apparently in the
+                local Windows codepage. If the file is entirely in English and
+                normal punctuation, then the file is also in ASCII.
+              </para>
+              <para>
+                <guilabel>ANSI</guilabel>:
+                そのファイルは、明らかに、ローカルなWindowsのコードページです。
+                もしファイルが完全に英語で、普通の句読点であるなら、ファイルはASCIIでしょう。
               </para>
             </listitem>
 
             <listitem>
               <para>
-                <guilabel>UTF-8</guilabel>: 
+                <guilabel>Unicode</guilabel>:
+                そのファイルは、多分、WindowsのデフォルトのUnicodeエンコーティングである、UCS-2LEです。
+              </para>
+            </listitem>
+
+            <listitem>
+              <para>
+                <guilabel>UTF-8</guilabel>:
                 そのファイルは、クロスプラットフォームなUnicodeエンコーディングである、UTF-8です。
               </para>
             </listitem>
 
             <listitem>
-              <para><guilabel>Unicode big endian</guilabel>: 
+              <para>
+                <guilabel>Unicode ビッグ・エインディアン</guilabel>:
                 そのファイルは、あまり使用されていないかWindowsでサポートされている
                 異なるUnicodeエンコーディングで、恐らく、UCS-2BEです。
               </para>
@@ -627,15 +694,18 @@
   </section>
 
   <section>
-    <title>パッチファイル<indexterm>
+    <title>パッチファイル
+      <indexterm>
         <primary>パッチファイル</primary>
 
         <secondary>diffutilsを使う</secondary>
-      </indexterm><indexterm>
-        <primary>diffutils</primary>
+      </indexterm>
 
+      <indexterm>
+        <primary>diffutils</primary>
         <secondary>WinMerge のパッチは互換性がある</secondary>
-      </indexterm></title>
+      </indexterm>
+    </title>
 
     <qandaset>
       <qandaentry>
@@ -647,9 +717,11 @@
           <para>
             ありません。それは、最新バージョンでは追加されるかもしれません。
             それまで、<filename>diffutils</filename>のWin32移植版が使えます。
-            最新版の<filename>diffutils</filename>(とパッチ)は、<application>the SourceForge GnuWin32</application>
-            プロジェクトページ: <ulink url="http://sourceforge.net/projects/gnuwin32/">
-              http://sourceforge.net/projects/gnuwin32</ulink>からダウンロードできます。
+            最新版の<filename>diffutils</filename>(とパッチ)は、
+            <application>SourceForgeのGnuWin32</application>
+            プロジェクトページ: 
+            <ulink url="http://sourceforge.net/projects/gnuwin32/">http://sourceforge.net/projects/gnuwin32</ulink>
+            からダウンロードできます。
           </para>
         </answer>
       </qandaentry>
@@ -661,14 +733,15 @@
 
         <answer>
           <para>No. However, you can apply patches using the patch tool from the
-          GnuWin32 project, because WinMerge produces patch files that are
-          compatible with GNU/diffutils. Also, see the preceding
-          question.</para>
+            GnuWin32 project, because WinMerge produces patch files that are
+            compatible with GNU/diffutils. Also, see the preceding
+            question.</para>
 
-        <para>いいえ. しかしながら、GnuWin32プロジェクトのパッチツールを使えます。
-          なぜなら、WinMergeのパッチファイル生成機能は、GNU/diffutilsと互換性があるからです。
-          また、前の質問も見てください。
-        </para>
+          <para>
+            いいえ。しかしながら、GnuWin32プロジェクトのパッチツールを使えます。
+            なぜなら、WinMergeのパッチファイル生成機能は、GNU/diffutilsと互換性があるからです。
+            また、前の質問も見てください。
+          </para>
         </answer>
       </qandaentry>
     </qandaset>
