@@ -12,17 +12,17 @@
             <filename>WinMerge.exe</filename> と
             <filename>WinMergeU.exe</filename>の二つの実行ファイルがあるの?
             <indexterm>
-              <primary>WinMerge executables, Unicode and ANSI</primary>
+              <primary>WinMerge実行ファイル, UnicodeとANSI</primary>
             </indexterm>
 
             <indexterm>
               <primary>Unicode</primary>
-              <secondary>WinMerge support</secondary>
+              <secondary>WinMergeサポート</secondary>
             </indexterm>
 
             <indexterm>
               <primary>ANSI</primary>
-              <secondary>WinMerge support</secondary>
+              <secondary>WinMergeサポート</secondary>
             </indexterm>
           </para>
         </question>
@@ -83,8 +83,8 @@
         <question>
           <para>フォルダ比較をしたいんだけど、参照ダイアログでフォルダが選択できないよ。
             <indexterm>
-              <primary>folders</primary>
-              <secondary>selecting in Select Files or Folders dialog</secondary>
+              <primary>フォルダ</primary>
+              <secondary>ファイル選択またはフォルダダイアログにおける選択</secondary>
             </indexterm>
           </para>
         </question>
@@ -148,7 +148,7 @@
 
             <indexterm>
               <primary>統合</primary>
-              <secondary>with version control systems</secondary>
+              <secondary>バージョン管理システム</secondary>
             </indexterm>
           </para>
         </question>
@@ -236,10 +236,7 @@
             <!-- FIXME -->
             このことをテストするために、大きいファイルのために<guilabel>クイックコンテンツ</guilabel>
             しきい値をあげてみることができます。
-
-            To test if this is causing the behavior you're seeing, you can try raising the
-            <guilabel>クイックコンテンツ</guilabel> threshold for large files.
-            <xref linkend="フォルダ比較操作の開始" />での、この方法の議論を見てください。
+            <xref linkend="フォルダ比較操作の開始" />での、この方法の検討を見てください。
           </para>
         </answer>
       </qandaentry>
@@ -249,22 +246,22 @@
           <para>WinMergeが
             <filename>CompareMSWordFiles.dll</filename>や
             <filename>CompareMSExcelFiles.dll</filename>が読み込めないとエラーを表示するよ!(クラッシュすることも!)<indexterm>
-              <primary>Visual Basic dlls for plugins</primary>
+              <primary>プラグインのためのVisual Basic DLL</primary>
               </indexterm><indexterm>
-              <primary>plugins</primary>
+              <primary>プラグイン</primary>
 
-              <secondary>Visual Basic dlls</secondary>
+              <secondary>Visual Basic DLL</secondary>
               </indexterm><indexterm>
-              <primary>CompareMSWordFiles.dll plugin file</primary>
+              <primary>プラグインファイル CompareMSWordFiles.dll</primary>
               </indexterm><indexterm>
-              <primary>CompareMSExcelFiles.dll plugin file</primary>
+              <primary>プラグインファイル CompareMSExcelFiles.dll</primary>
           </indexterm></para>
         </question>
 
         <answer>
           <para>
             これらのプラグインは、Visual Basic (6.0)で書かれています。
-            WinMergeのインストーラには、Visual Basicランタイムが含まれていないため、これらのプラグインがロードできません。
+            WinMergeのインストーラには、Visual Basicランタイムが含まれていないため、これらのプラグインが読み込めません。
             あなたは、幾つかのオプションの中の一つを使用して、この問題に対処することができます。
           </para>
 
@@ -532,14 +529,13 @@
 
             <listitem>
               <!-- FIXME -->
-              <para>If the error is something like: <emphasis><errortext>7-zip
-                    x.xx missing / Plugin present</errortext></emphasis>, then you
-                probably installed 7-Zip using the MSI installer. Some 7-Zip MSI
-                installers do not install all the files that WinMerge needs
-                (specifically, <filename>7zip_pad.xml</filename> in the 7-Zip
-                program folder). Download and run the <filename>EXE</filename>
-                version of the 7-Zip installer.</para>
-
+              <!--<para>If the error is something like: <emphasis><errortext>7-zip-->
+              <!--      x.xx missing / Plugin present</errortext></emphasis>, then you-->
+              <!--  probably installed 7-Zip using the MSI installer. Some 7-Zip MSI-->
+              <!--  installers do not install all the files that WinMerge needs-->
+              <!--  (specifically, <filename>7zip_pad.xml</filename> in the 7-Zip-->
+              <!--  program folder). Download and run the <filename>EXE</filename>-->
+              <!--  version of the 7-Zip installer.</para>-->
               <para>
                 次の様なエラーの場合: 
                 <emphasis>
@@ -601,7 +597,8 @@
           <para>
             はい。 
             <guibutton>設定</guibutton>ボタンをクリック
-            (または、<menuchoice>
+            (または、
+            <menuchoice>
               <guimenu>編集(E)</guimenu>
               <guimenuitem>設定(O)</guimenuitem>とクリック)してください。
             </menuchoice>)。 
@@ -647,18 +644,12 @@
             </menuchoice>とクリックし、保存ダイアログで
 
             <!-- FIXME -->
-            <guilabel>Encoding</guilabel> item at the dropdown list. The possible
-            values include:
+            <guilabel>エンコーディング</guilabel></guilabel> ドロップダウンリストの項目をスクロールしてみてください。
+            そこに、有効な値が含まれています。
           </para>
 
           <itemizedlist>
             <listitem>
-              <!-- FIXME -->
-              <para>
-                <guilabel>ANSI</guilabel>: The file is apparently in the
-                local Windows codepage. If the file is entirely in English and
-                normal punctuation, then the file is also in ASCII.
-              </para>
               <para>
                 <guilabel>ANSI</guilabel>:
                 そのファイルは、明らかに、ローカルなWindowsのコードページです。
@@ -732,15 +723,10 @@
         </question>
 
         <answer>
-          <para>No. However, you can apply patches using the patch tool from the
-            GnuWin32 project, because WinMerge produces patch files that are
-            compatible with GNU/diffutils. Also, see the preceding
-            question.</para>
-
           <para>
             いいえ。しかしながら、GnuWin32プロジェクトのパッチツールを使えます。
             なぜなら、WinMergeのパッチファイル生成機能は、GNU/diffutilsと互換性があるからです。
-            また、前の質問も見てください。
+            また、この前の質問も見てください。
           </para>
         </answer>
       </qandaentry>
