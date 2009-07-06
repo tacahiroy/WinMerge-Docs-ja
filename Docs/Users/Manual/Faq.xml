@@ -234,6 +234,9 @@
             この方法は、WinMergeで大きなファイルをより効率的に比較することを可能にします。
 
             <!-- FIXME -->
+            <!--To test if this is causing the behavior you're seeing, you can try raising the Quick Contents threshold for large files.-->
+            <!--See the discussion of this method in 「フォルダ比較操作の開始」  to learn how.-->
+
             このことをテストするために、大きいファイルのために<guilabel>クイックコンテンツ</guilabel>
             しきい値をあげてみることができます。
             <xref linkend="フォルダ比較操作の開始" />での、この方法の検討を見てください。
@@ -643,7 +646,6 @@
               <guimenuitem>名前を付けて保存(A)</guimenuitem>
             </menuchoice>とクリックし、保存ダイアログで
 
-            <!-- FIXME -->
             <guilabel>エンコーディング</guilabel></guilabel> ドロップダウンリストの項目をスクロールしてみてください。
             そこに、有効な値が含まれています。
           </para>
