@@ -127,7 +127,6 @@
         <row>
           <entry><keycap>Esc</keycap></entry>
 
-          <entry>Close window (if enabled in options)</entry>
           <entry>ウィンドウを閉じます(設定が有効になっているなら)</entry>
         </row>
 
@@ -146,7 +145,7 @@
         <row>
           <entry><keycap>F6</keycap></entry>
 
-          <entry>ペイン(アクティブなファイル)を切り替えます(</entry>
+          <entry>ペイン(アクティブなファイル)を切り替えます</entry>
         </row>
 
         <row>
@@ -240,7 +239,6 @@
               <keycap>Enter</keycap>
             </keycombo></entry>
 
-          <entry>Go to current difference or select difference</entry>
           <entry>現在の差異へ移動、または、差異を選択</entry>
         </row>
 
@@ -281,7 +279,6 @@
               <keycap>右矢印</keycap>
             </keycombo></entry>
 
-          <entry>Copy difference from left side to right side</entry>
           <entry>左から右へ差異をコピー</entry>
         </row>
 
@@ -396,7 +393,6 @@
               <keycap>F</keycap>
             </keycombo></entry>
 
-          <entry>Find text (opens Find dialog)</entry>
           <entry>文字を検索(検索ダイアログを開く)</entry>
         </row>
 
