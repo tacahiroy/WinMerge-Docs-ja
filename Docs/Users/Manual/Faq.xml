@@ -116,7 +116,7 @@
             残念ながらサポートしていません。
             私たちは、それが良い機能であることを認識していますが、近いうちに実装する予定はありません。
             いくつかの制約がありますが、二つのWinMergeインスタンスを起動するか、コマンドラインの三つめのパス・パラメータを使用することにより、この問題を回避できます。
-            さらなる情報は、<xref linkend="コマンドライン" />を参照してください。
+            さらなる情報は、<xref linkend="Command_line" />を参照してください。
           </para>
         </answer>
       </qandaentry>
@@ -157,10 +157,10 @@
           <para>
             CVS統合機能を提供することは微妙です。
             なぜなら、すでに多くの良質なCVSクライアントが存在するからです。
-            けれども、WinMergeは、それらのCVSクライアントのひとつ、TortoiseCVS(<xref linkend="バージョンコントロール" />で後述)
+            けれども、WinMergeは、それらのCVSクライアントのひとつ、TortoiseCVS(<xref linkend="Version_control" />で後述)
             の差分機能を統合します。
             WinMergeは、コンフリクトファイルを解決することもできます。
-            (さらなる情報は、<xref linkend="コンフリクトファイルの解決" />を参照)。
+            (さらなる情報は、<xref linkend="ResolveConflictFiles" />を参照)。
           </para>
         </answer>
       </qandaentry>
@@ -203,7 +203,7 @@
           <itemizedlist>
             <listitem>
               <para>
-                <xref linkend="7-Zip と アーカイブサポート" />で説明されている、
+                <xref linkend="Installing_archive_support" />で説明されている、
                 アーカイブサポートをインストールしてください。
               </para>
             </listitem>
@@ -237,9 +237,8 @@
             <!--To test if this is causing the behavior you're seeing, you can try raising the Quick Contents threshold for large files.-->
             <!--See the discussion of this method in 「フォルダ比較操作の開始」  to learn how.-->
 
-            このことをテストするために、大きいファイルのために<guilabel>クイックコンテンツ</guilabel>
-            しきい値をあげてみることができます。
-            <xref linkend="フォルダ比較操作の開始" />での、この方法の検討を見てください。
+            このことがあなたの見ている現象を発生させるかどうかをテストするために、<guilabel>クイックコンテンツ</guilabel>用の大きなファイルとみなすしきい値を上げてみることができます。
+            どのようにすればよいか学ぶために<xref linkend="Compare_dirs_starting" />での、この方法の説明を見てください。
           </para>
         </answer>
       </qandaentry>
@@ -303,7 +302,7 @@
             WinMerge を書庫(zipまたは7z)ファイルよりインストールする時、
             幾つかのランタイムパッケージも必要です。
             詳細は、インストールヘルプの
-            <xref linkend="圧縮ファイルからのインストール" />をご覧ください。
+            <xref linkend="InstallFromArchive" />をご覧ください。
           </para>
         </answer>
       </qandaentry>
@@ -542,7 +541,7 @@
               <para>
                 次の様なエラーの場合: 
                 <emphasis>
-                  <errortext>7-zip x.xx が見つかりません / プラグインが表示した場合、</errortext>
+                  <errortext>7-zip x.xx が見つかりません / プラグインは存在</errortext>
                 </emphasis>, 
                 MSIインストーラを使用して7-Zipがインストールされたかもしれません。
                 いくつかの7-ZipのMSIインストーラは、WinMergeが必要とするすべてのファイル
@@ -646,7 +645,7 @@
               <guimenuitem>名前を付けて保存(A)</guimenuitem>
             </menuchoice>とクリックし、保存ダイアログで
 
-            <guilabel>エンコーディング</guilabel></guilabel> ドロップダウンリストの項目をスクロールしてみてください。
+            <guilabel>エンコーディング</guilabel> ドロップダウンリストの項目をスクロールしてみてください。
             そこに、有効な値が含まれています。
           </para>
 
