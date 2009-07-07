@@ -23,13 +23,13 @@
         <row>
           <entry><keycap>Enter</keycap></entry>
 
-          <entry>選択されているファイル、または、フォルダを開きます</entry>
+          <entry>選択されているファイル、または、フォルダを開く</entry>
         </row>
 
         <row>
           <entry><keycap>Backspace</keycap></entry>
 
-          <entry>もし、可能なら(サブフォルダが比較対象に含まれない時のみ)親フォルダを開きます。</entry>
+          <entry>もし、可能なら(サブフォルダが比較対象に含まれない時のみ)親フォルダを開く</entry>
         </row>
 
         <row>
@@ -45,7 +45,7 @@
               <keycap>Home</keycap>
             </keycombo></entry>
 
-          <entry>ファイル、または、フォルダの最初の差異に移動します</entry>
+          <entry>ファイル、または、フォルダの最初の差異に移動</entry>
         </row>
 
         <row>
@@ -55,7 +55,7 @@
               <keycap>End</keycap>
             </keycombo></entry>
 
-          <entry>ファイル、または、フォルダの最後の差異に移動します</entry>
+          <entry>ファイル、または、フォルダの最後の差異に移動</entry>
         </row>
 
         <row>
@@ -65,7 +65,7 @@
               <keycap>Enter</keycap>
             </keycombo></entry>
 
-          <entry>現在選択されている項目に移動します(もしスクリーンの外にあるなら)</entry>
+          <entry>現在選択されている項目に移動(もしスクリーンの外にあるなら)</entry>
         </row>
 
         <row>
@@ -75,7 +75,7 @@
               <keycap>上矢印</keycap>
             </keycombo></entry>
 
-          <entry>ファイル、または、フォルダの前の差異に移動します</entry>
+          <entry>ファイル、または、フォルダの前の差異に移動</entry>
         </row>
 
         <row>
@@ -85,7 +85,7 @@
               <keycap>下矢印</keycap>
             </keycombo></entry>
 
-          <entry>ファイル、または、フォルダの次の差異に移動します</entry>
+          <entry>ファイル、または、フォルダの次の差異に移動</entry>
         </row>
 
         <row>
@@ -95,7 +95,7 @@
               <keycap>左矢印</keycap>
             </keycombo></entry>
 
-          <entry>選択されている項目を右から左へコピーします</entry>
+          <entry>選択されている項目を右から左へコピー</entry>
         </row>
 
         <row>
@@ -105,7 +105,7 @@
               <keycap>右矢印</keycap>
             </keycombo></entry>
 
-          <entry>選択されている項目を左から右へコピーします</entry>
+          <entry>選択されている項目を左から右へコピー</entry>
         </row>
       </tbody>
     </tgroup>
@@ -127,44 +127,43 @@
         <row>
           <entry><keycap>Esc</keycap></entry>
 
-          <entry>Close window (if enabled in options)</entry>
-          <entry>ウィンドウを閉じます(設定が有効になっているなら)</entry>
+          <entry>ウィンドウを閉じる(設定が有効になっているなら)</entry>
         </row>
 
         <row>
           <entry><keycap>F4</keycap></entry>
 
-          <entry>行内差異を表示します</entry>
+          <entry>行内差異を表示</entry>
         </row>
 
         <row>
           <entry><keycap>F5</keycap></entry>
 
-          <entry>表示を更新します</entry>
+          <entry>表示を更新</entry>
         </row>
 
         <row>
           <entry><keycap>F6</keycap></entry>
 
-          <entry>ペイン(アクティブなファイル)を切り替えます(</entry>
+          <entry>ペイン(アクティブなファイル)を切り替える</entry>
         </row>
 
         <row>
           <entry><keycap>F7</keycap></entry>
 
-          <entry>前の差異へ移動します</entry>
+          <entry>前の差異へ移動</entry>
         </row>
 
         <row>
           <entry><keycap>F8</keycap></entry>
 
-          <entry>次の差異へ移動します</entry>
+          <entry>次の差異へ移動</entry>
         </row>
 
         <row>
           <entry><keycap>F9</keycap></entry>
 
-          <entry>マージモードのオン・オフを切り替えます</entry>
+          <entry>マージモードのオン・オフを切り替える</entry>
         </row>
 
         <row>
@@ -174,7 +173,7 @@
               <keycap>G</keycap>
             </keycombo></entry>
 
-          <entry>差異、または、行へ移動します</entry>
+          <entry>差異、または、行へ移動</entry>
         </row>
 
         <row>
@@ -184,7 +183,7 @@
               <keycap>Z</keycap>
             </keycombo></entry>
 
-          <entry>最後に行った操作を元に戻します</entry>
+          <entry>最後に行った操作を元に戻す</entry>
         </row>
 
         <row>
@@ -194,7 +193,7 @@
               <keycap>Y</keycap>
             </keycombo></entry>
 
-          <entry>前の操作をやり直します</entry>
+          <entry>前の操作をやり直す</entry>
         </row>
       </tbody>
     </tgroup>
@@ -220,7 +219,7 @@
               <keycap>Home</keycap>
             </keycombo></entry>
 
-          <entry>最初の差異へ移動します</entry>
+          <entry>最初の差異へ移動</entry>
         </row>
 
         <row>
@@ -230,7 +229,7 @@
               <keycap>End</keycap>
             </keycombo></entry>
 
-          <entry>最後の差異へ移動します</entry>
+          <entry>最後の差異へ移動</entry>
         </row>
 
         <row>
@@ -240,7 +239,6 @@
               <keycap>Enter</keycap>
             </keycombo></entry>
 
-          <entry>Go to current difference or select difference</entry>
           <entry>現在の差異へ移動、または、差異を選択</entry>
         </row>
 
@@ -281,7 +279,6 @@
               <keycap>右矢印</keycap>
             </keycombo></entry>
 
-          <entry>Copy difference from left side to right side</entry>
           <entry>左から右へ差異をコピー</entry>
         </row>
 
