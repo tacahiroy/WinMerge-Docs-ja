@@ -2,77 +2,78 @@
 <article id="About_Doc">
   <title>WinMergeヘルプについて</title>
 
-  <para>This is Help for WinMerge <xi:include href="replaceables.xml"
+  <para>このドキュメントはWinMerge <xi:include href="replaceables.xml"
   xmlns:xi="http://www.w3.org/2001/XInclude"
-  xpointer="element(version)" />.</para>
+  xpointer="element(version)" />のヘルプです。</para>
 
   <section>
     <title>対象読者と範囲</title>
 
-    <para>WinMerge Help is intended for both new and experienced users. It
-    explains how to use WinMerge, and documents its capabilities and
-    limitations.</para>
+    <para>WinMergeヘルプは、新しいユーザーと経験豊かなユーザー両方を対象としています。
+    WinMergeヘルプは、WinMergeの使い方を説明し、能力と限界を文書化します。
+    </para>
   </section>
 
   <section>
     <title>ヘルプへのアクセス方法</title>
 
-    <para>WinMerge Help topics are provided in two forms:</para>
+    <para>WinMergeヘルプトピックは、2つの形式で提供されます:</para>
 
     <itemizedlist>
       <listitem>
-        <para>Microsoft HTML Help (<filename>WinMerge.chm</filename>), located
-        in your WinMerge\Docs installation directory.</para>
+        <para>Microsoft HTML ヘルプ (<filename>WinMerge.chm</filename>),
+        インストールディレクトリのWinMerge\Docsにあります。</para>
       </listitem>
 
       <listitem>
-        <para>HTML manual on the WinMerge Web site.</para>
+        <para>WinMergeウェブサイトのHTML マニュアル</para>
       </listitem>
     </itemizedlist>
 
-    <para>You can access WinMerge Help in several ways:</para>
+    <para>以下のいくつかの方法でWinMergeヘルプにアクセスできます:</para>
 
     <variablelist>
       <varlistentry>
-        <term>WinMerge Help menu</term>
+        <term>WinMergeヘルプメニュー</term>
 
         <listitem>
-          <para>While using WinMerge, click <menuchoice>
-              <guimenu>Help</guimenu>
+          <para>WinMerge使用中に、<menuchoice>
+              <guimenu>ヘルプ</guimenu>
 
-              <guimenuitem>WinMerge Help</guimenuitem>
-            </menuchoice>. HTML Help opens at the beginning (this topic).</para>
+              <guimenuitem>WinMergeヘルプ</guimenuitem>
+            </menuchoice>をクリックします。
+            HTMLヘルプの最初(このトピック)が開かれます。</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
-        <term>Context-sensitive help</term>
+        <term>状況依存のヘルプ</term>
 
         <listitem>
-          <para>While using any WinMerge window, press F1. If a specific topic
-          is available for your current window, Help opens at that topic. If
-          not, Help opens at the beginning.</para>
+          <para>何らかのWinMergeウインドウを使用中に、F1を押してください。
+          現在のウインドウに関するトピックがあれば、そのトピックのヘルプを開きます。
+          もしなければ、最初のトピックを開きます。</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
-        <term>WinMerge command line</term>
+        <term>WinMergeコマンドライン</term>
 
         <listitem>
-          <para>Use the /? or -? switch when running WinMerge from the command
-          line. HTML Help opens at the beginning.</para>
+          <para>コマンドラインからWinMergeを実行しているときは、/? か -? スイッチを使用してください。
+          HTMLヘルプが最初のトピックを開きます。</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
-        <term>WinMerge Web site</term>
+        <term>WinMergeウェブサイト</term>
 
         <listitem>
-          <para>Open your Web browser to <ulink
-          url="http://winmerge.org/">winmerge.org</ulink>. Under <ulink
-          url="http://winmerge.org/docs/">Documentation</ulink>, follow the
-          <ulink url="http://winmerge.org/docs/manual/">Manual</ulink> link to
-          the latest Help version.</para>
+          <para><ulink
+          url="http://winmerge.org/">winmerge.org</ulink>をブラウザで開いてください。
+          <ulink url="http://winmerge.org/docs/">Documentation</ulink>の
+          <ulink url="http://winmerge.org/docs/manual/">Manual</ulink>リンクをたどってください。
+          最新版のヘルプが開きます。</para>
         </listitem>
       </varlistentry>
     </variablelist>
@@ -81,16 +82,14 @@
   <section>
     <title>ヘルプの使い方</title>
 
-    <para>Please read the following topics to learn essential WinMerge
-    basics,</para>
+    <para>最も重要なWinMergeの基本を学ぶために、次のトピックを読んでください。</para>
 
     <variablelist>
       <varlistentry>
         <term><xref linkend="Quick_start" /></term>
 
         <listitem>
-          <para>Gets you quickly started with WinMerge and shows its basic
-          usage.</para>
+          <para>WinMergeを手早く使い始められるようにし、基本的な使用方法を示します。</para>
         </listitem>
       </varlistentry>
 
@@ -98,8 +97,8 @@
         <term><xref linkend="Compare_dirs" /></term>
 
         <listitem>
-          <para>Explains the folder comparison window, available operations, and
-          customizing the results display.</para>
+          <para>フォルダ比較ウインドウでの可能な操作、結果表示のカスタマイズの仕方を説明します。
+          </para>
         </listitem>
       </varlistentry>
 
@@ -107,8 +106,8 @@
         <term><xref linkend="Compare_files" /></term>
 
         <listitem>
-          <para>Explains the file comparison/merge window, available operations,
-          methods of navigation, and modes.</para>
+          <para>ファイル比較・マージウインドウでの可能な操作、ナビゲーションの方法、モードについて説明します。
+          </para>
         </listitem>
       </varlistentry>
 
@@ -116,22 +115,22 @@
         <term><xref linkend="Configuration" /></term>
 
         <listitem>
-          <para>Explains how to customize WinMerge, including handling
-          whitespace, colours, and text encoding.</para>
+          <para>空白、色、テキストエンコーディングの取り扱いを含めたWinMergeの設定方法について説明します。
+          </para>
         </listitem>
       </varlistentry>
     </variablelist>
 
-    <para>To learn about WinMerge in more detail, read these topics:</para>
+    <para>もっと詳細にWinMergeについて学習したい場合、次のトピックを読んでください:</para>
 
     <variablelist>
       <varlistentry>
         <term><xref linkend="Open_paths" /></term>
 
         <listitem>
-          <para>Introduces several ways to open files and folders in WinMerge -
-          there are many! For example, do you know how to use the Shell
-          Extension context menu in advanced mode?</para>
+          <para>WinMergeでファイルとフォルダを開くいくつかの方法(たくさんあります!)について紹介します。
+          例えば、詳細モードでのシェル拡張コンテキストメニューの使い方を知っていますか?
+          </para>
         </listitem>
       </varlistentry>
 
@@ -139,8 +138,8 @@
         <term><xref linkend="Plugins" /></term>
 
         <listitem>
-          <para>Describes the optional, extra features that you can add to
-          WinMerge using its plugin mechanism.</para>
+          <para>プラグイン機構を使用してWinMergeに追加できるオプション機能について説明します。
+          </para>
         </listitem>
       </varlistentry>
 
@@ -148,8 +147,8 @@
         <term><xref linkend="Filters" /></term>
 
         <listitem>
-          <para>Explains how to control what is compared in the folder or file
-          comparison window.</para>
+          <para>フォルダやファイル比較ウインドウで比較される対象を制御する方法を説明します
+          </para>
         </listitem>
       </varlistentry>
 
@@ -157,8 +156,8 @@
         <term><xref linkend="Command_line" /></term>
 
         <listitem>
-          <para>Lists command-line parameters for using WinMerge with other
-          tools or from a script.</para>
+          <para>他のツールと連携やスクリプトから起動するときに使用できるコマンドラインパラメータを記載します。
+          </para>
         </listitem>
       </varlistentry>
 
@@ -166,13 +165,13 @@
         <term><xref linkend="Faq" /></term>
 
         <listitem>
-          <para>Contains answers to many common questions asked of
-          developers.</para>
+          <para>開発者に尋ねられたたくさんの共通的な質問に対する回答を含んでいます。
+          </para>
 
-          <para>Before submitting questions to <ulink
+          <para>質問を <ulink
           url="http://sourceforge.net/projects/winmerge/">SourceForge.net</ulink>,
-          please check the <xref linkend="Faq" /> topic first to see if your
-          question is answered there.</para>
+          にする前に、<xref linkend="Faq" />トピックで質問が回答されていないか確認してください。
+          </para>
         </listitem>
       </varlistentry>
     </variablelist>
