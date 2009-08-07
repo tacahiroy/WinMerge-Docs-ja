@@ -5,82 +5,93 @@
   <section>
     <title><indexterm>
         <primary>WinMergeを始めよう</primary>
-      </indexterm><indexterm>
+        </indexterm><indexterm>
         <primary>ファイルとフォルダを開く</primary>
 
         <secondary>getting started</secondary>
-      </indexterm>ファイルとフォルダを開く</title>
+    </indexterm>ファイルとフォルダを開く</title>
 
-    <para>After you have installed WinMerge, step through the procedure and
-    discussions in this topic to learn basic WinMerge operations and concepts.
-    The methods shown are not the only ways to do things: there are usually
-    several ways to do each task. When you are done, you can go on to learn
-    other methods and more advanced skills, which are covered in other help
-    topics.</para>
+    <!--<para>After you have installed WinMerge, step through the procedure and-->
+    <!--discussions in this topic to learn basic WinMerge operations and concepts.-->
+    <!--The methods shown are not the only ways to do things: there are usually-->
+    <!--several ways to do each task. When you are done, you can go on to learn-->
+    <!--other methods and more advanced skills, which are covered in other help-->
+    <!--topics.</para>-->
+    <!--TODO: -->
+    <para>WinMergeをインストールしたら、トピック中の手順と議論を通じて、
+      基本的なWinMergeの操作と概念を学んでください。
+      その方法は、一つではありません: 各タスクを実行するための方法が、いくつかあります。
+    </para>
 
     <orderedlist>
       <listitem>
-        <para>Open the WinMerge window. Here are some of the methods you can
-        use:<indexterm>
+        <para>WinMergeのウィンドウを開いてください。
+          ここに、あなたが使用できる、いくつかの方法があります:
+          <indexterm>
             <primary>WinMerge window</primary>
-          </indexterm></para>
+          </indexterm>
+        </para>
 
         <itemizedlist>
           <listitem>
-            <para>Double-click the WinMerge desktop shortcut.</para>
+            <para>デスクトップにあるWinMergeのショートカットをダブルクリックしてください。</para>
           </listitem>
 
           <listitem>
-            <para>Navigate to the WinMerge launcher in your Start menu.</para>
+            <para>スタートメニューにあるWinMergeのランチャから操作してください。</para>
           </listitem>
 
           <listitem>
-            <para>In a Command Prompt window, cd to the WinMerge installation
-            folder and enter <command>WinMergeU</command>.</para>
+            <para>コマンドプロンプトで、WinMergeをインストールしたディレクトリへ移動し、
+              <command>WinMergeU</command>と入力してください。</para>
           </listitem>
         </itemizedlist>
       </listitem>
 
       <listitem>
-        <para>In the WinMerge window select the files or folders that you want
-        to operate on. For example:</para>
+        <para>WinMergeのウィンドウ内で、あなたが操作したいファイル、または、フォルダを選択してください。例えば</para>
 
         <itemizedlist>
           <listitem>
-            <para>Click <menuchoice>
-                <guimenu>File</guimenu>
+            <para>
+              <menuchoice>
+                <guimenu>ファイル(F)</guimenu>
 
-                <guimenuitem>Open</guimenuitem>
-              </menuchoice>.</para>
+                <guimenuitem>開く(O)</guimenuitem>
+              </menuchoice>とクリックしてください。
+            </para>
           </listitem>
 
           <listitem>
-            <para>Click the <inlinemediaobject>
+            <para>ツールバーの開くボタン<inlinemediaobject>
                 <imageobject>
                   <imagedata contentwidth="16"
-                             fileref="screenshots/open_icon.png" />
+                    fileref="screenshots/open_icon.png" />
                 </imageobject>
 
                 <textobject>
                   <phrase>WinMerge open button</phrase>
                 </textobject>
-              </inlinemediaobject> Open tool bar button.</para>
+            </inlinemediaobject>をクリックしてください。</para>
           </listitem>
 
           <listitem>
-            <para>Press <keycombo>
+            <para>
+              <keycombo>
                 <keycap>Ctrl</keycap>
-
                 <keycap>O</keycap>
-              </keycombo>.</para>
+              </keycombo>を押してください。
+            </para>
           </listitem>
         </itemizedlist>
 
-        <para><indexterm>
-            <primary>Select Files or Folders dialog</primary>
-
-            <secondary>getting started</secondary>
-          </indexterm>The Select Files or Folders dialog opens:</para>
+        <para>
+          <indexterm>
+            <primary>ファイルまたはフォルダの選択ダイアログ</primary>
+            <secondary>さあ、はじめよう</secondary>
+          </indexterm>
+          ファイルまたはフォルダ選択ダイアログを開く
+        </para>
 
         <mediaobject>
           <imageobject>
@@ -88,102 +99,114 @@
           </imageobject>
 
           <textobject>
-            <phrase>Select Files or Folders window</phrase>
+            <phrase>ファイルまたはフォルダ選択画面</phrase>
           </textobject>
         </mediaobject>
       </listitem>
 
       <listitem>
-        <para>In the <guilabel>Left</guilabel> and <guilabel>Right</guilabel>
-        fields, specify the files and folders to compare. Use any of these
-        methods:</para>
+        <!--<para>In the <guilabel>Left</guilabel> and <guilabel>Right</guilabel>-->
+        <!--  fields, specify the files and folders to compare. Use any of these-->
+        <!--  methods:</para>-->
+        <!-- TODO: 全然ダメ -->
+        <para><guilabel>左</guilabel>と<guilabel>右</guilabel>
+          のフィールドに、比較するファイルやフォルダを指定してください。これらの方法で:</para>
 
         <para><itemizedlist>
             <listitem>
-              <para>Enter the path names directly into the fields.</para>
+              <para>この欄に、直接、パスを入力してください。</para>
             </listitem>
 
             <listitem>
-              <para>Click the <guibutton>Browse</guibutton> button to navigate
-              to the desired path.</para>
+              <!--FIXME-->
+              <!--<para>Click the <guibutton>Browse</guibutton> button to navigate-->
+              <!--  to the desired path.</para>-->
+            <para>
+              <guibutton>参照</guibutton>ボタンをクリックし、望みのパスを
+              ナビゲートしてください。
+            </para>
 
-              <para>In the Open dialog, the text, <literal>Folder
-              Selection</literal>, is initially displayed in the <guilabel>File
-              name</guilabel> field. Your selection depends on the type of
-              comparison you want to do:</para>
+              <!--<para>In the Open dialog, the text, <literal>Folder-->
+              <!--    Selection</literal>, is initially displayed in the <guilabel>File-->
+              <!--    name</guilabel> field. Your selection depends on the type of-->
+              <!--  comparison you want to do:</para>-->
+            <para>開くダイアログの中の、<guilabel>開く(M)</guilabel>フィールドの
+              初期状態は、<literal>Folder Selection.</literal>と表示されています。
+                  Your selection depends on the type of
+                comparison you want to do:</para>
 
               <itemizedlist>
                 <listitem>
                   <para>If you are comparing files, select the target file. The
-                  <literal>Folder Selection</literal> text is overwritten with
-                  your selection.</para>
+                    <literal>Folder Selection</literal> text is overwritten with
+                    your selection.</para>
                 </listitem>
 
                 <listitem>
                   <para>If you are comparing folders, open the target folder; do
-                  not select a file. The <literal>Folder Selection</literal>
-                  text remains in place.</para>
+                    not select a file. The <literal>Folder Selection</literal>
+                    text remains in place.</para>
                 </listitem>
               </itemizedlist>
 
               <para>Click <guibutton>Open</guibutton> to dismiss the Open dialog
-              and load your selection in the <guilabel>Left</guilabel> or
-              <guilabel>Right</guilabel> field. If you specified folders, the
-              field includes a backslash ( \ ) at end of the path.</para>
+                and load your selection in the <guilabel>Left</guilabel> or
+                <guilabel>Right</guilabel> field. If you specified folders, the
+                field includes a backslash ( \ ) at end of the path.</para>
             </listitem>
 
             <listitem>
               <para>Click the combo box and choose a previously-used
-              path.</para>
+                path.</para>
 
               <tip>
                 <para>To make it easier to select frequently-used paths,
-                consider enabling the <guilabel>Open-dialog
-                Auto-completion</guilabel> option. With this option, WinMerge
-                shows a list of paths available as you type in the fields. See
-                <xref linkend="Configuration" /> for details.</para>
+                  consider enabling the <guilabel>Open-dialog
+                    Auto-completion</guilabel> option. With this option, WinMerge
+                  shows a list of paths available as you type in the fields. See
+                  <xref linkend="Configuration" /> for details.</para>
               </tip>
             </listitem>
 
             <listitem>
               <para>Drag and drop a file or folder into the dialog or the
-              <guilabel>Left</guilabel> or <guilabel>Right</guilabel>
-              field.</para>
+                <guilabel>Left</guilabel> or <guilabel>Right</guilabel>
+                field.</para>
             </listitem>
-          </itemizedlist></para>
+        </itemizedlist></para>
 
         <para><note>
             <para>You can select only one pair of files or one pair of folders
-            to compare. If you select a file and a folder or if one of the files
-            or folders is not found, WinMerge disables the
-            <guibutton>OK</guibutton> button in the dialog.</para>
+              to compare. If you select a file and a folder or if one of the files
+              or folders is not found, WinMerge disables the
+              <guibutton>OK</guibutton> button in the dialog.</para>
 
             <para>The status message at the bottom of the dialog also informs
-            you if one of the paths is invalid.</para>
-          </note></para>
+              you if one of the paths is invalid.</para>
+        </note></para>
       </listitem>
 
       <listitem>
         <para>If you are comparing folders, you can use the
-        <guilabel>Filter</guilabel> field to eliminate some files from the
-        operation. The field specifies a subset of files in the selected paths
-        that are to be included; all unspecified files are excluded.</para>
+          <guilabel>Filter</guilabel> field to eliminate some files from the
+          operation. The field specifies a subset of files in the selected paths
+          that are to be included; all unspecified files are excluded.</para>
 
         <para>You can enter file masks to filter files with certain extensions.
-        For example, this expression includes only C and C++ source files; all
-        other file types are eliminated from your selection.</para>
+          For example, this expression includes only C and C++ source files; all
+          other file types are eliminated from your selection.</para>
 
         <para><filename><userinput>*.cpp;*.hpp;*.c;*.h</userinput></filename></para>
 
         <para>For more robust filtering, enter a filter file instead of file
-        masks: click the <guibutton>Select</guibutton> button next to the
-        <guilabel>Filters</guilabel> field to choose from a list of available
-        filters. File filters contain any number of rules to either include or
-        exclude files. WinMerge installs a set of filter files, which you can
-        edit or augment with your own files.</para>
+          masks: click the <guibutton>Select</guibutton> button next to the
+          <guilabel>Filters</guilabel> field to choose from a list of available
+          filters. File filters contain any number of rules to either include or
+          exclude files. WinMerge installs a set of filter files, which you can
+          edit or augment with your own files.</para>
 
         <para>See <xref linkend="Filters" /> for full details about file masks
-        and filter files.</para>
+          and filter files.</para>
 
         <!--
         <variablelist>
@@ -192,20 +215,20 @@
 
             <listitem>
               <para>In this method, you specify the types of files to include in
-              the operation; all other files are excluded (filtered). With no
-              file mask or the default mask of <literal>*.*</literal>, all files
-              in the paths are included, so no filtering is performed. To add
-              filtering, enter one or more masks. Separate multiple masks with
-              spaces, commas, colons or semicolons.</para>
+                the operation; all other files are excluded (filtered). With no
+                file mask or the default mask of <literal>*.*</literal>, all files
+                in the paths are included, so no filtering is performed. To add
+                filtering, enter one or more masks. Separate multiple masks with
+                spaces, commas, colons or semicolons.</para>
 
               <para>For example, this expression filters all files from the
-              operation except C and C++ source files:</para>
+                operation except C and C++ source files:</para>
 
               <para><filename><userinput>*.cpp;*.hpp;*.c;*.h</userinput></filename></para>
 
               <para>File names cannot be filtered: they are represented in the
-              masks only by the <literal>*</literal> wildcard character. For
-              example, these expressions are not valid masks:</para>
+                masks only by the <literal>*</literal> wildcard character. For
+                example, these expressions are not valid masks:</para>
 
               <para><userinput>mybook.xml</userinput></para>
 
@@ -218,27 +241,27 @@
 
             <listitem>
               <para>File filtering is more powerful than extension filtering.
-              Click the <guibutton>Select</guibutton> button next to the
-              <guilabel>Filters</guilabel> field to choose from a list of
-              available filters. </para>
+                Click the <guibutton>Select</guibutton> button next to the
+                <guilabel>Filters</guilabel> field to choose from a list of
+                available filters. </para>
             </listitem>
           </varlistentry>
         </variablelist>
--->
+        -->
       </listitem>
 
       <listitem>
         <para>The <guilabel>Include Subfolders</guilabel> check box provides
-        another way to control the scope of folder comparisons. If you check
-        this option, WinMerge recursively compares subfolders, and shows all the
-        files and folders it finds in one view. If you disable the option, only
-        the current folder is compared, and subfolders are listed by name
-        (without their contents), so you can browse into them.</para>
+          another way to control the scope of folder comparisons. If you check
+          this option, WinMerge recursively compares subfolders, and shows all the
+          files and folders it finds in one view. If you disable the option, only
+          the current folder is compared, and subfolders are listed by name
+          (without their contents), so you can browse into them.</para>
       </listitem>
 
       <listitem>
         <para>The Unpacker field enables you to perform compare operations on
-        plug-ins.</para>
+          plug-ins.</para>
       </listitem>
     </orderedlist>
 
@@ -262,19 +285,22 @@
 
           <itemizedlist>
             <listitem>
-              <para>From the WinMerge window, click <menuchoice>
-                  <guimenuitem>File</guimenuitem>
+              <para>WinMergeのウィンドウの、<menuchoice>
+                  <guimenuitem>ファイル(F)</guimenuitem>
 
-                  <guimenuitem>Open Project</guimenuitem>
-                </menuchoice>.</para>
+                  <guimenuitem>プロジェクトを開く(J)</guimenuitem>
+                </menuchoice>とクリックしてください。</para>
             </listitem>
 
             <listitem>
-              <para>From a command line.</para>
+              <para>コマンドラインから:</para>
             </listitem>
 
             <listitem>
-              <para>From the Opening Files and Folders dialog, specify a project
+              <!--<para>From the Opening Files and Folders dialog, specify a project-->
+              <!--file in the <guilabel>Left</guilabel> field.</para>-->
+            <!-- FIXME -->
+              <para>「ファイルまたはフォルダの選択」ダイアログから、From the Opening Files and Folders dialog, specify a project
               file in the <guilabel>Left</guilabel> field.</para>
 
               <note>
@@ -298,8 +324,9 @@
         </listitem>
 
         <listitem>
-          <simpara>Drag and drop files and folders directly into the WinMerge
-          window or on the WinMerge desktop shortcut.</simpara>
+        <simpara>
+          ファイルやフォルダを、WinMergeのウィンドウかデスクトップのショートカットへ直接、ドラッグ・アンド・ドロップしてください。
+        </simpara>
         </listitem>
       </itemizedlist>
     </section>
@@ -361,16 +388,16 @@
         </listitem>
 
         <listitem>
-          <simpara>Right-click the row and choose the
-          <guimenuitem>Compare</guimenuitem> shortcut.</simpara>
+          <simpara>行を右クリックし、
+          <guimenuitem>比較</guimenuitem>ショートカットを選択してください。</simpara>
         </listitem>
 
         <listitem>
-          <simpara>Double-click the row.</simpara>
+          <simpara>行をダブルクリックする。</simpara>
         </listitem>
 
         <listitem>
-          <simpara>Select the row and press <keycap>Enter</keycap>.</simpara>
+          <simpara>行を選択し、<keycap>Enter</keycap>を入力してください。</simpara>
         </listitem>
       </itemizedlist>If you compare a subfolder, the new folder's comparison
     table is loaded in the current Folder Compare window . When you are done
@@ -422,27 +449,33 @@
     merge a difference, you copy all of its lines from one side to the
     other.</para>
 
-    <para><important>
-        <para>Notice how WinMerge fills missing lines, so that similar lines are
+  <para>
+    <important>
+      <para>Notice how WinMerge fills missing lines, so that similar lines are
         always aligned vertically, side by side. This is different from most
-        other compare/merge programs, and can take a while to learn.</para>
-      </important></para>
+        other compare/merge programs, and can take a while to learn.
+      </para>
+    </important>
+  </para>
 
     <para>WinMerge has a simple integrated editor that features basic typing,
     copying, cutting and pasting of text. If <guilabel>Automatic
     rescan</guilabel> is enabled, WinMerge updates file differences while you
     edit a file. If <guilabel>Automatic rescan</guilabel> is disabled, you can
     update files by selecting <menuchoice>
-        <guimenu>Edit</guimenu>
 
-        <guimenuitem>Refresh</guimenuitem>
+        <!-- NOTE: 誤り? -->
+        <!--<guimenu>編集(E)</guimenu>-->
+        <!--<guimenuitem>更新</guimenuitem>-->
+        <guimenu>表示(V)</guimenu>
+        <guimenuitem>最新の情報に更新(S)</guimenuitem>
       </menuchoice>, clicking the <inlinemediaobject>
         <imageobject>
           <imagedata contentwidth="16" fileref="screenshots/refresh_btn.png" />
         </imageobject>
 
         <textobject>
-          <phrase>Refresh button</phrase>
+          <phrase>更新ボタン</phrase>
         </textobject>
       </inlinemediaobject> toolbar button, or pressing
     <keycap>F5</keycap>.</para>
