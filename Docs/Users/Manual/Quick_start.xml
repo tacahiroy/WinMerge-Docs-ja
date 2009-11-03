@@ -11,16 +11,10 @@
         <secondary>getting started</secondary>
     </indexterm>ファイルとフォルダを開く</title>
 
-    <!--<para>After you have installed WinMerge, step through the procedure and-->
-    <!--discussions in this topic to learn basic WinMerge operations and concepts.-->
-    <!--The methods shown are not the only ways to do things: there are usually-->
-    <!--several ways to do each task. When you are done, you can go on to learn-->
-    <!--other methods and more advanced skills, which are covered in other help-->
-    <!--topics.</para>-->
-    <!--TODO: -->
     <para>WinMergeをインストールしたら、トピック中の手順と議論を通じて、
       基本的なWinMergeの操作と概念を学んでください。
-      その方法は、一つではありません: 各タスクを実行するための方法が、いくつかあります。
+      その方法は、一つではありません。各タスクを実行するための方法が、いくつかあります。
+      それを完了したら、他のヘルプトピックでカバーされる他の方法と、より高度な技能を学び続けることができます。
     </para>
 
     <orderedlist>
@@ -105,35 +99,23 @@
       </listitem>
 
       <listitem>
-        <!--<para>In the <guilabel>Left</guilabel> and <guilabel>Right</guilabel>-->
-        <!--  fields, specify the files and folders to compare. Use any of these-->
-        <!--  methods:</para>-->
-        <!-- TODO: 全然ダメ -->
-        <para><guilabel>左</guilabel>と<guilabel>右</guilabel>
-          のフィールドに、比較するファイルやフォルダを指定してください。これらの方法で:</para>
+        <para><guilabel>左(1)</guilabel>と<guilabel>右(2)</guilabel>
+          のフィールドに、これらのうち、いくつかの方法で、比較するファイルやフォルダを指定してください。</para>
 
         <para><itemizedlist>
             <listitem>
-              <para>この欄に、直接、パスを入力してください。</para>
+              <para>このフィールドに、直接、パスを入力してください。</para>
             </listitem>
 
             <listitem>
-              <!--FIXME-->
-              <!--<para>Click the <guibutton>Browse</guibutton> button to navigate-->
-              <!--  to the desired path.</para>-->
             <para>
               <guibutton>参照</guibutton>ボタンをクリックし、望みのパスを
               ナビゲートしてください。
             </para>
 
-              <!--<para>In the Open dialog, the text, <literal>Folder-->
-              <!--    Selection</literal>, is initially displayed in the <guilabel>File-->
-              <!--    name</guilabel> field. Your selection depends on the type of-->
-              <!--  comparison you want to do:</para>-->
             <para>開くダイアログの中の、<guilabel>開く(M)</guilabel>フィールドの
               初期状態は、<literal>Folder Selection.</literal>と表示されています。
-                  Your selection depends on the type of
-                comparison you want to do:</para>
+              あなたがどれを選択するかは、比較したい形式によります。</para>
 
               <itemizedlist>
                 <listitem>
@@ -147,10 +129,9 @@
                 </listitem>
               </itemizedlist>
 
-              <para>Click <guibutton>Open</guibutton> to dismiss the Open dialog
-                and load your selection in the <guilabel>Left</guilabel> or
-                <guilabel>Right</guilabel> field. If you specified folders, the
-                field includes a backslash ( \ ) at end of the path.</para>
+            <para><guibutton>開く</guibutton>ボタンをクリックして、開くダイアログを閉じ、
+              選択した項目を<guilabel>左(1)</guilabel>、または、<guilabel>右(2)</guilabel>フィールドに読み込んでください。
+              もし、フォルダを選択したなら、パスの最後にバックスラッシュ ( \ )を含んでいます。</para>
             </listitem>
 
             <listitem>
@@ -158,22 +139,16 @@
                 </para>
 
               <tip>
-                <!-- FIXME: 後半が怪しい -->
-                <!--<para>To make it easier to select frequently-used paths,-->
-                  <!--consider enabling the <guilabel>Open-dialog-->
-                    <!--Auto-completion</guilabel> option. With this option, WinMerge-->
-                  <!--shows a list of paths available as you type in the fields. See-->
-                  <!--<xref linkend="Configuration" /> for details.</para>-->
                 <para>よく使うパスを、より簡単に選択するには、<guilabel>開くダイアログのオートコンプリート(O)</guilabel>
                   オプションを有効にすることを考慮に入れてください。
-                  このオプションにより、WinMergeは、あなたがフィールドにタイプする時に、有効なパスの一覧を表示します。
+                  このオプションにより、WinMergeは、あなたがこのフィールドに入力する時に、有効なパスの一覧を表示します。
                   詳しくは、<xref linkend="Configuration" />を参照してください。</para>
               </tip>
             </listitem>
 
             <listitem>
-            <para>ファイル、フォルダをダイアログ、または、<guilabel>左</guilabel>、
-              または、<guilabel>右</guilabel>のフィールドへドラッグ・アンド・ドロップしてください。
+            <para>ファイル、フォルダをダイアログ、または、<guilabel>左(1)</guilabel>、
+              または、<guilabel>右(2)</guilabel>のフィールドへドラッグ・アンド・ドロップしてください。
                 </para>
             </listitem>
         </itemizedlist></para>
@@ -192,20 +167,23 @@
       <listitem>
         <para>もし、フォルダを比較しているなら、その操作からファイルを除外するために、
           <guilabel>フィルタ</guilabel>フィールドを使用することができます。
+          <!--FIXME: ぎこちない -->
+          そのフィールドには、選択されたパスの中にあるファイルの一部を指定します。
+          すべての指定されていないファイルは、除外されます。
           The field specifies a subset of files in the selected paths
           that are to be included; all unspecified files are excluded.</para>
 
-      <para>あなたは、ファイルをフィルタするための、ファイル・マスクを入力することができます。
+      <para>ファイルをフィルタするための、ファイル・マスクを入力することができます。
         例えば、この式は、CとC++のソースファイルだけを含みます(他のすべてのファイル形式は除外されます)。</para>
 
         <para><filename><userinput>*.cpp;*.hpp;*.c;*.h</userinput></filename></para>
 
-        <para>For more robust filtering, enter a filter file instead of file
-          masks: click the <guibutton>Select</guibutton> button next to the
-          <guilabel>Filters</guilabel> field to choose from a list of available
-          filters. File filters contain any number of rules to either include or
-          exclude files. WinMerge installs a set of filter files, which you can
-          edit or augment with your own files.</para>
+        <para>より強固なフィルタリングのため、ファイルマスクの代わりに、フィルタファイルを入力してください。
+          <guilabel>フィルタ(F)</guilabel>フィールドの次にある、<guibutton>選択</guibutton>ボタンをクリックして、
+          有効なフィルタの中から選択してください。
+          ファイルフィルタは、いくつかの含めるか、除外するかのルールから成ります。
+          WinMergeは、フィルタファイルのセットをインストールします。
+          それらを編集するか、増強することができます。
 
         <para>ファイル・マスクとファイル・フィルタについての、完全な詳細は、<xref linkend="Filters" />
           を参照してください。</para>
@@ -253,17 +231,23 @@
       </listitem>
 
       <listitem>
-        <para>The <guilabel>Include Subfolders</guilabel> check box provides
-          another way to control the scope of folder comparisons. If you check
-          this option, WinMerge recursively compares subfolders, and shows all the
-          files and folders it finds in one view. If you disable the option, only
-          the current folder is compared, and subfolders are listed by name
-          (without their contents), so you can browse into them.</para>
+        <!--<para>The <guilabel>Include Subfolders</guilabel> check box provides-->
+        <!--  another way to control the scope of folder comparisons. If you check-->
+        <!--  this option, WinMerge recursively compares subfolders, and shows all the-->
+        <!--  files and folders it finds in one view. If you disable the option, only-->
+        <!--  the current folder is compared, and subfolders are listed by name-->
+        <!--  (without their contents), so you can browse into them.</para>-->
+      <!--FIXME: 最後の一文カタすぎ-->
+      <para>
+        <guilabel>サブフォルダを含む(I)</guilabel>チェックボックスは、フォルダ比較の範囲を制御する、もう一つの方法です。
+        このオプションをチェックすると、WinMergeは、サブフォルダを再帰的に比較し、すべてのファイルとフォルダを一覧表示します。
+        このオプションを無効にした場合は、カレントフォルダのみが比較されます。サブフォルダは名前で一覧表示され、中を閲覧することができます。
+      </para>
       </listitem>
 
       <listitem>
-        <para>The Unpacker field enables you to perform compare operations on
-          plug-ins.</para>
+        <para>展開プラグイン(U)フィールドは、プラグインを使用した比較操作を可能にします。
+          </para>
       </listitem>
     </orderedlist>
 
@@ -282,9 +266,6 @@
 
       <itemizedlist>
         <listitem>
-          <!--<para><xref linkend="OpenPaths_project" /> are the easiest and fastest-->
-          <!--way to open frequently used paths. To open a project file, use one of-->
-          <!--these methods:</para>-->
           <para><xref linkend="OpenPaths_project" />は、よく使うパスを、もっとも簡単かつ高速に開く方法です。
             これらの方法のうちのどれかで、プロジェクトファイルを開いてください。
           </para>
@@ -299,22 +280,18 @@
             </listitem>
 
             <listitem>
-              <!-- FIXME: あれ？なくなってる？-->
-              <para>コマンドラインから、</para>
+              <para>コマンドラインから。</para>
             </listitem>
 
             <listitem>
-              <!--<para>From the Opening Files and Folders dialog, specify a project-->
-              <!--file in the <guilabel>Left</guilabel> field.</para>-->
-            <!-- FIXME -->
             <para>「ファイルまたはフォルダの選択」ダイアログから、プロジェクトファイルを、
-              <guilabel>左</guilabel>フィールドに指定してください。</para>
+              <guilabel>左(1)</guilabel>フィールドに指定してください。</para>
 
               <note>
-                <para>If you specify project files in both the
-                <guilabel>Left</guilabel> and <guilabel>Right</guilabel> fields,
-                WinMerge does not open either project file; it simply compares
-                the XML content of the two files.</para>
+                <para>プロジェクトファイルを
+                <guilabel>左(1)</guilabel>と<guilabel>右(2)</guilabel>フィールドの両方に指定した場合、
+                WinMergeは、どちらのプロジェクトファイルも開きません。(単に2つのXMLファイルの中身を比較します)
+                </para>
               </note>
             </listitem>
           </itemizedlist>
@@ -325,9 +302,10 @@
         </listitem>
 
         <listitem>
-          <simpara>Use the <xref linkend="Command_line" /> interface to start
-          WinMerge from other applications, from a command prompt, or a batch or
-          script file.</simpara>
+          <simpara><xref linkend="Command_line" />インターフェイスを使用して、
+            他のアプリケーション、コマンド・プロンプト、バッチ、または、スクリプトファイルから
+            WinMergeを起動してください。
+          </simpara>
         </listitem>
 
         <listitem>
@@ -349,12 +327,9 @@
 
         <secondary>getting started</secondary>
       </indexterm>フォルダの比較</title>
-
-    <para>If you selected two folders in the Open dialog, the Folder Compare
-    window is opened. The Folder Compare window is a tabular list of items found
-    in the compared folders. Each row displays information about a found file,
-    with the file name in the left column and additional information in the
-    other columns:</para>
+    <para>もし、開くダイアログで、2つのフォルダを選択したなら、フォルダ比較ウィンドウが開かれます。
+    フォルダ比較ウィンドウは、比較対象フォルダ中で見つかった項目の表です。
+    それぞれの行は、見つかったファイルについて、左の列にファイル名、その他の列に付加的な情報を表示します。</para>
 
     <mediaobject>
       <imageobject>
@@ -363,40 +338,41 @@
       </imageobject>
 
       <textobject>
-        <phrase>Folder Compare window</phrase>
+        <phrase>フォルダ比較ウィンドウ</phrase>
       </textobject>
     </mediaobject>
 
-    <para>WinMerge does not have a concept of <wordasword>original</wordasword>
-    and <wordasword>changed</wordasword> sides. Instead, it simply shows what is
-    different between two selected folders. A file or folder that is found only
-    on one side is simply shown as a unique item on that side, not as added or
-    removed. For example, in the <guilabel>Comparison result </guilabel>column
-    of the preceding figure, <filename>Merge.aps</filename> and
-    <filename>Merge.rc.bak</filename> are each found in only one of the compared
-    folders.</para>
+    <para>WinMergeは、<wordasword>変更元</wordasword>と<wordasword>変更後</wordasword>という概念を持っていません。
+      代わりに、選択された二つのフォルダ間の差異を、単に表示します。
+      一方でしか見つからなかったファイル、または、フォルダは、単に見つかった方にのみ存在する項目として表示されます。
+      例えば、上の図の<guilabel>比較結果(Comparison Result)</guilabel>カラムにある、
+      <filename>Merge.aps</filename>と<filename>Merge.rc.bak</filename>は、
+      どちらも比較されたフォルダの一方でしか見つかりませんでした。</para>
 
-    <para>You can manage files and folders in many ways using the
-    <guimenu>Merge</guimenu> menu, toolbar buttons, or context (right-click)
-    menu. The most important action is making files or folders identical in both
-    sides by selecting one of several Copy items. When you copy a file or folder
-    to other side, the Comparison result value changes to
-    <literal>Identical</literal>.</para>
+    <para>
+      <guimenu>マージ(M)</guimenu>メニュー、ツールバーボタン、または、コンテキスト(右クリック)メニューなど、
+      多くの方法で、ファイルとフォルダを管理できます。
+      <!-- FIXME The most important ~ several Copy items. -->
+      最も重要なアクションは、ファイルの作成、または、
+      いくつかのコピーアイテムのうち、選択している両方にある同一のフォルダひとつ
+      The most important action is making files or folders identical in both
+      sides by selecting one of several Copy items.
+      ファイル、または、フォルダを他方へコピーした時、比較結果は、<literal>同一</literal>に変わります。
+    </para>
 
-    <para>If a file or folder exists in both sides (and it is not a binary file)
-    it can be opened for file comparison using one of these
-    methods:<itemizedlist>
+    <para>もし、ファイル、または、フォルダが、左右両方に存在した(かつ、バイナリファイルでない)場合、
+      これらのうち一つの方法で、比較するために、ファイルを開くことができます。<itemizedlist>
         <listitem>
-          <simpara>Click <menuchoice>
-              <guimenuitem>Compare</guimenuitem>
+          <simpara>WinMergeメニューから、<menuchoice>
+              <guimenuitem>マージ(M)</guimenuitem>
 
-              <guimenuitem>Merge</guimenuitem>
-            </menuchoice> in the WinMerge menu.</simpara>
+              <guimenuitem>比較(M)</guimenuitem>
+            </menuchoice>をクリックする。</simpara>
         </listitem>
 
         <listitem>
           <simpara>行を右クリックし、
-          <guimenuitem>比較</guimenuitem>ショートカットを選択してください。</simpara>
+          <guimenuitem>比較(A)</guimenuitem>ショートカットを選択する。</simpara>
         </listitem>
 
         <listitem>
@@ -406,10 +382,10 @@
         <listitem>
           <simpara>行を選択し、<keycap>Enter</keycap>を入力してください。</simpara>
         </listitem>
-      </itemizedlist>If you compare a subfolder, the new folder's comparison
-    table is loaded in the current Folder Compare window . When you are done
-    with that folder's comparison, you can navigate back to its parent folder by
-    double-clicking the <inlinemediaobject>
+      </itemizedlist>
+    サブフォルダを比較する場合、新しいフォルダ比較テーブルが、現在のフォルダ比較ウィンドウ内に読み込まれます。
+    フォルダ比較を完了したら、ファイル名列の一番上の上矢印ボタン
+    <inlinemediaobject>
         <imageobject>
           <imagedata contentwidth="23" fileref="screenshots/nav_uparrow_btn.png" />
         </imageobject>
@@ -417,12 +393,12 @@
         <textobject>
           <phrase>Navigator up arrow button</phrase>
         </textobject>
-      </inlinemediaobject> up arrow at the top of the Filename column.</para>
+    </inlinemediaobject>
+    をダブルクリックし、親フォルダに戻ることができます。</para>
 
-    <para>If you compare a file, WinMerge opens the File Compare window,
-    described in the next section. If you change a file in the File Compare
-    window, and then return to the Folder Compare window, you will see the
-    file's data is updated there.</para>
+    <para>ファイルを比較する場合、WinMergeは、次のセクションで説明される、ファイル比較ウィンドウを開きます。
+      ファイル比較ウィンドウ内で、ファイルを変更するなら、フォルダ比較ウィンドウに戻った時、
+      ファイルのデータが更新されていることを確認できるでしょう。</para>
   </section>
 
   <section id="QuickStart_comparingfiles">
@@ -443,40 +419,50 @@
       </imageobject>
 
       <textobject>
-        <phrase>File Compare window</phrase>
+        <phrase>ファイル比較ウィンドウ</phrase>
       </textobject>
     </mediaobject>
 
-    <para>The File Compare window shows the two selected files side by side, in
-    separate File panes. Different lines are highlighted with a background
-    color. One or more consecutive different lines form one difference (or
-    <glossterm>diff</glossterm>). In the preceding example, a single difference
-    is selected in the File panes and displayed by itself in the Diff Pane.
-    WinMerge mainly works with these differences, not separate lines. When you
-    merge a difference, you copy all of its lines from one side to the
-    other.</para>
+    <!--<para>The File Compare window shows the two selected files side by side, in-->
+    <!--separate File panes. Different lines are highlighted with a background-->
+    <!--color. One or more consecutive different lines form one difference (or-->
+    <!--<glossterm>diff</glossterm>). In the preceding example, a single difference-->
+    <!--is selected in the File panes and displayed by itself in the Diff Pane.-->
+    <!--WinMerge mainly works with these differences, not separate lines. When you-->
+    <!--merge a difference, you copy all of its lines from one side to the-->
+    <!--other.</para>-->
+  <para>ファイル比較ウィンドウは、分割されたファイルペインに、二つの選択されたファイルをとなり同士に表示します。
+    異なる行は、背景色がハイライト表示されます。
+    ひとつ、または、連続した異なる行は、ひとつの差異(<glossterm>diff</glossterm>)として表されます。
+    <!--FIXME-->
+    前の例での、ファイルペインで選択された単一の差異とDiffペインに表示された差異です。
+    In the preceding example, a single difference is selected in the File panes and displayed by itself in the Diff Pane.
+
+    <!--FIXME: 直訳やん？-->
+    WinMergeは、主に、分割された行ではなく、これらの差異で効果的です。
+    WinMerge mainly works with these differences, not separate lines.
+    
+    差異をマージすると、その差異のすべての行を他方にコピーします。
+    </para>
 
   <para>
     <important>
-      <para>Notice how WinMerge fills missing lines, so that similar lines are
-        always aligned vertically, side by side. This is different from most
-        other compare/merge programs, and can take a while to learn.
+    <para>同じ行が、いつも隣同士に並べられるように、WinMergeが、どのように無くなった行を埋めるかに、
+      注意してください。これは、他のほとんどの、比較/マージプログラムと異なり、学ぶためにしばらく時間がかかります。
       </para>
     </important>
   </para>
 
-    <para>WinMerge has a simple integrated editor that features basic typing,
-    copying, cutting and pasting of text. If <guilabel>Automatic
-    rescan</guilabel> is enabled, WinMerge updates file differences while you
-    edit a file. If <guilabel>Automatic rescan</guilabel> is disabled, you can
-    update files by selecting <menuchoice>
+    <para>WinMergeは、テキストの基本的な入力、コピー、カット・アンド・ペースト機能を持った、シンプルな実装のエディタを備えています。
+    もし、 <guilabel>自動再スキャン</guilabel>が有効なら、WinMergeは、あなたがファイルを編集している間、ファイルの差異を更新します。
+    もし、<guilabel>自動再スキャン</guilabel>が無効なら、手動でファイルを更新できます。<menuchoice>
 
-        <!-- NOTE: 誤り? -->
+        <!-- NOTE: 誤りと思われる -->
         <!--<guimenu>編集(E)</guimenu>-->
         <!--<guimenuitem>更新</guimenuitem>-->
         <guimenu>表示(V)</guimenu>
         <guimenuitem>最新の情報に更新(S)</guimenuitem>
-      </menuchoice>, clicking the <inlinemediaobject>
+      </menuchoice>をクリックしてください。<inlinemediaobject>
         <imageobject>
           <imagedata contentwidth="16" fileref="screenshots/refresh_btn.png" />
         </imageobject>
@@ -484,7 +470,8 @@
         <textobject>
           <phrase>更新ボタン</phrase>
         </textobject>
-      </inlinemediaobject> toolbar button, or pressing
-    <keycap>F5</keycap>.</para>
+      </inlinemediaobject>をクリックするか、
+    <keycap>F5</keycap>を押してください。</para>
   </section>
 </article>
+
