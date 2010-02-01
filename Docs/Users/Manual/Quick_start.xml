@@ -167,11 +167,12 @@
       <listitem>
         <para>もし、フォルダを比較しているなら、その操作からファイルを除外するために、
           <guilabel>フィルタ</guilabel>フィールドを使用することができます。
-          <!--FIXME: ぎこちない -->
-          そのフィールドには、選択されたパスの中にあるファイルの一部を指定します。
-          すべての指定されていないファイルは、除外されます。
+          <!--FIXME: ぎこちない
           The field specifies a subset of files in the selected paths
           that are to be included; all unspecified files are excluded.</para>
+          -->
+          そのフィールドには、選択されたパスの中にあるファイルの一部を指定します。
+          すべての指定されていないファイルは、除外されます。
 
       <para>ファイルをフィルタするための、ファイル・マスクを入力することができます。
         例えば、この式は、CとC++のソースファイルだけを含みます(他のすべてのファイル形式は除外されます)。</para>
@@ -183,7 +184,7 @@
           有効なフィルタの中から選択してください。
           ファイルフィルタは、いくつかの含めるか、除外するかのルールから成ります。
           WinMergeは、フィルタファイルのセットをインストールします。
-          それらを編集するか、増強することができます。
+          それらは、編集、または、強化することができます。
 
         <para>ファイル・マスクとファイル・フィルタについての、完全な詳細は、<xref linkend="Filters" />
           を参照してください。</para>
@@ -231,18 +232,12 @@
       </listitem>
 
       <listitem>
-        <!--<para>The <guilabel>Include Subfolders</guilabel> check box provides-->
-        <!--  another way to control the scope of folder comparisons. If you check-->
-        <!--  this option, WinMerge recursively compares subfolders, and shows all the-->
-        <!--  files and folders it finds in one view. If you disable the option, only-->
-        <!--  the current folder is compared, and subfolders are listed by name-->
-        <!--  (without their contents), so you can browse into them.</para>-->
-      <!--FIXME: 最後の一文カタすぎ-->
-      <para>
-        <guilabel>サブフォルダを含む(I)</guilabel>チェックボックスは、フォルダ比較の範囲を制御する、もう一つの方法です。
-        このオプションをチェックすると、WinMergeは、サブフォルダを再帰的に比較し、すべてのファイルとフォルダを一覧表示します。
-        このオプションを無効にした場合は、カレントフォルダのみが比較されます。サブフォルダは名前で一覧表示され、中を閲覧することができます。
-      </para>
+        <para>
+          <guilabel>サブフォルダを含む(I)</guilabel>チェックボックスは、フォルダ比較の範囲を制御する、もう一つの方法です。
+          このオプションをチェックすると、WinMergeは、サブフォルダを再帰的に比較し、すべてのファイルとフォルダを一覧表示します。
+          このオプションを無効にした場合は、カレントフォルダのみが比較されます。
+          サブフォルダは名前で一覧表示(フォルダの中身は除く)され、フォルダの中を閲覧することができます。
+        </para>
       </listitem>
 
       <listitem>
@@ -352,11 +347,12 @@
     <para>
       <guimenu>マージ(M)</guimenu>メニュー、ツールバーボタン、または、コンテキスト(右クリック)メニューなど、
       多くの方法で、ファイルとフォルダを管理できます。
-      <!-- FIXME The most important ~ several Copy items. -->
-      最も重要なアクションは、ファイルの作成、または、
-      いくつかのコピーアイテムのうち、選択している両方にある同一のフォルダひとつ
+      <!-- FIXME
       The most important action is making files or folders identical in both
       sides by selecting one of several Copy items.
+      -->
+      もっとも重要なアクションは、ファイル、または、フォルダの作成...
+
       ファイル、または、フォルダを他方へコピーした時、比較結果は、<literal>同一</literal>に変わります。
     </para>
 
@@ -423,24 +419,15 @@
       </textobject>
     </mediaobject>
 
-    <!--<para>The File Compare window shows the two selected files side by side, in-->
-    <!--separate File panes. Different lines are highlighted with a background-->
-    <!--color. One or more consecutive different lines form one difference (or-->
-    <!--<glossterm>diff</glossterm>). In the preceding example, a single difference-->
-    <!--is selected in the File panes and displayed by itself in the Diff Pane.-->
-    <!--WinMerge mainly works with these differences, not separate lines. When you-->
-    <!--merge a difference, you copy all of its lines from one side to the-->
-    <!--other.</para>-->
   <para>ファイル比較ウィンドウは、分割されたファイルペインに、二つの選択されたファイルをとなり同士に表示します。
     異なる行は、背景色がハイライト表示されます。
     ひとつ、または、連続した異なる行は、ひとつの差異(<glossterm>diff</glossterm>)として表されます。
-    <!--FIXME-->
-    前の例での、ファイルペインで選択された単一の差異とDiffペインに表示された差異です。
+    <!-- FIXME 意味不
     In the preceding example, a single difference is selected in the File panes and displayed by itself in the Diff Pane.
-
-    <!--FIXME: 直訳やん？-->
-    WinMergeは、主に、分割された行ではなく、これらの差異で効果的です。
     WinMerge mainly works with these differences, not separate lines.
+    -->
+    前の例において、単一の差異は、ファイルペインで選択されており、Diffペインに単独で表示されます。
+    WinMergeは主に、個別の行でなく、これらの差異で効果的です。
     
     差異をマージすると、その差異のすべての行を他方にコピーします。
     </para>
@@ -457,7 +444,7 @@
     もし、 <guilabel>自動再スキャン</guilabel>が有効なら、WinMergeは、あなたがファイルを編集している間、ファイルの差異を更新します。
     もし、<guilabel>自動再スキャン</guilabel>が無効なら、手動でファイルを更新できます。<menuchoice>
 
-        <!-- NOTE: 誤りと思われる -->
+        <!-- NOTE: 誤り？ -->
         <!--<guimenu>編集(E)</guimenu>-->
         <!--<guimenuitem>更新</guimenuitem>-->
         <guimenu>表示(V)</guimenu>
