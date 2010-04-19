@@ -167,12 +167,12 @@
       <listitem>
         <para>もし、フォルダを比較しているなら、その操作からファイルを除外するために、
           <guilabel>フィルタ</guilabel>フィールドを使用することができます。
-          <!--FIXME: ぎこちない
           The field specifies a subset of files in the selected paths
           that are to be included; all unspecified files are excluded.</para>
-          -->
+          <!--FIXME: ぎこちない
           そのフィールドには、選択されたパスの中にあるファイルの一部を指定します。
           すべての指定されていないファイルは、除外されます。
+          -->
 
       <para>ファイルをフィルタするための、ファイル・マスクを入力することができます。
         例えば、この式は、CとC++のソースファイルだけを含みます(他のすべてのファイル形式は除外されます)。</para>
@@ -184,7 +184,7 @@
           有効なフィルタの中から選択してください。
           ファイルフィルタは、いくつかの含めるか、除外するかのルールから成ります。
           WinMergeは、フィルタファイルのセットをインストールします。
-          それらは、編集、または、強化することができます。
+          それらは、編集、または、強化することができます。</para>
 
         <para>ファイル・マスクとファイル・フィルタについての、完全な詳細は、<xref linkend="Filters" />
           を参照してください。</para>
@@ -347,11 +347,11 @@
     <para>
       <guimenu>マージ(M)</guimenu>メニュー、ツールバーボタン、または、コンテキスト(右クリック)メニューなど、
       多くの方法で、ファイルとフォルダを管理できます。
-      <!-- FIXME
       The most important action is making files or folders identical in both
       sides by selecting one of several Copy items.
-      -->
+      <!-- FIXME
       もっとも重要なアクションは、ファイル、または、フォルダの作成...
+      -->
 
       ファイル、または、フォルダを他方へコピーした時、比較結果は、<literal>同一</literal>に変わります。
     </para>
@@ -422,12 +422,12 @@
   <para>ファイル比較ウィンドウは、分割されたファイルペインに、二つの選択されたファイルをとなり同士に表示します。
     異なる行は、背景色がハイライト表示されます。
     ひとつ、または、連続した異なる行は、ひとつの差異(<glossterm>diff</glossterm>)として表されます。
-    <!-- FIXME 意味不
     In the preceding example, a single difference is selected in the File panes and displayed by itself in the Diff Pane.
     WinMerge mainly works with these differences, not separate lines.
-    -->
+    <!-- FIXME 意味不
     前の例において、単一の差異は、ファイルペインで選択されており、Diffペインに単独で表示されます。
     WinMergeは主に、個別の行でなく、これらの差異で効果的です。
+    -->
     
     差異をマージすると、その差異のすべての行を他方にコピーします。
     </para>
