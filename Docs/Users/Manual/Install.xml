@@ -306,40 +306,37 @@
         <primary>Windows shell integration</primary>
       </indexterm></title>
 
-    <para>If you do not use the install program and you want to enable Windows
-    Explorer shell integration, you must register the shell integration DLL
-    (<filename>ShellExtension*.dll</filename>) separately.</para>
+    <para>もし、インストールプログラムを使用せずに、シェル統合を有効にしたいなら、
+    シェル統合DLL(<filename>ShellExtension*.dll</filename>)を別に登録しなければなりません。</para>
 
     <note>
-      <para>Installing shell integration requires Administrator user
-      privileges.</para>
+      <para>シェル統合のインストールは、Administrator権限を必要とします。</para>
     </note>
 
-    <para>First, uninstall the current shell integration version by running
-    <filename>unregister.bat</filename> from the WinMerge directory. Then
-    restart the computer so that Windows completes the uninstall.</para>
+    <para>はじめに、WinMergeフォルダの<filename>unregister.bat</filename>を実行し、
+      現在のシェル統合をアンインストールしてください。シェル統合のアンインストールが完了したら、
+      コンピュータを再起動してください。
+    </para>
 
-    <para>To register the shell integration DLL
-    (<filename>ShellExtension*.dll</filename>), run
-    <filename>register.bat</filename> from the WinMerge directory. We recommend
-    that you restart the computer after installing shell integration, so that
-    Windows updates all its references.</para>
+    <para>シェル統合DLL(<filename>ShellExtension*.dll</filename>)を登録するため、
+      WinMergeフォルダの<filename>register.bat</filename>を実行してください。
+      シェル統合をインストール後、コンピュータを再起動することをオススメします。
+      Windowsは、その参照をすべて更新します。
+    </para>
 
     <section>
       <title>64-bit Windowsエクスプローラシェル統合<indexterm>
           <primary>Windows 64-bit versions, WinMerge support</primary>
         </indexterm></title>
 
-      <para>Starting with Version 2.6, WinMerge supports Windows Explorer shell
-      integration for 64-bit Windows versions. The WinMerge installer recognizes
-      the 64-bit versions of Windows and can install the correct shell
-      integration.</para>
+      <para>バージョン2.6から、WinMergeは、64ビットWindows用のエクスプローラシェル統合をサポートしています。
+        WinMergeインストーラは、64ビットWindowsを認識し、適当なシェル統合をインストールすることができます。
+      </para>
 
-      <para>When you install shell integration manually from an archive file,
-      the shell integration DLL is named
-      <filename>ShellExtensionX64.dll</filename>. You can register and
-      unregister this file by using <filename>register.bat</filename> and
-      <filename>unregister.bat</filename>, as with 32-bit versions.</para>
+      <para>シェル統合を、アーカイブファイルから手動でインストールする場合、
+        シェル統合DLLは、<filename>ShellExtensionX64.dll</filename>という名前がつけられています。
+        32ビット版と同様に、<filename>register.bat</filename>と<filename>unregister.bat</filename>
+        を使用して、このファイルを登録、または、解除することができます。</para>
     </section>
   </section>
 
@@ -352,23 +349,23 @@
         <secondary>configuring support during installation</secondary>
       </indexterm>7-Zip とアーカイブサポート</title>
 
-    <para>WinMerge uses <ulink url="http://www.7-zip.org/">7-Zip</ulink> for
-    archive support, but the WinMerge installer does not install 7-Zip or
-    archive support. Installing the 7-Zip application is recommended but not
-    required for archive support. The 7-Zip installer is available for
-    downloading from <ulink
-    url="http://www.7-zip.org/">7-Zip.org</ulink>.</para>
+      <para>WinMergeは、アーカイブサポートのために、<ulink url="http://www.7-zip.org/">7-Zip</ulink>
+        を使用します。しかし、WinMergeインストーラは、7-Zipやアーカイブサポートをインストールしません。
+        7-Zipアプリケーションのインストールは、推奨されますが、アーカイブサポートのために、必ずしも必要ではありません。
+        7-Zipインストーラは、<ulink url="http://www.7-zip.org/">7-Zip.org</ulink>よりダウンロード可能です。
+      </para>
 
-    <important>
-      <para>There are 7-Zip MSI installers that do not install all the files
-      WinMerge needs (specifically, <filename>7zip_pad.xml</filename> in the
-      7-Zip program folder). If there are problems with archive support
-      enabling, try running the EXE version of the 7-Zip installer.</para>
-    </important>
+      <important>
+        <para>WinMergeが必要とするすべてのファイル(特に、7-Zipのプログラムフォルダにある<filename>7zip_pad.xml</filename>)を
+          インストールしない、7-ZipのMSIインストーラがあります。
+          もし、アーカイブサポートを可能にするのに問題があるなら、EXE版の7-Zipインストーラを試してください。
+        </para>
+      </important>
 
-    <para>To install archive support, download and install the7-Zip plugin from
-    <ulink url="http://winmerge.org/">WinMerge.org</ulink>, as described in the
-    <xref linkend="Install_merge7zinstaller" /> section of this topic.</para>
+      <para>アーカイブサポートをインストールするには、
+        <xref linkend="Install_merge7zinstaller" />の項で説明される7-Zipプラグインを、
+        <ulink url="http://winmerge.org/">WinMerge.org</ulink>よりダウンロードしインストールしてください。
+      </para>
 
     <para>WinMerge automatically detects an installed 7-zip in the system, so no
     configuration is needed.</para>
