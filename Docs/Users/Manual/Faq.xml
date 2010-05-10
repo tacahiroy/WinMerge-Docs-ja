@@ -74,7 +74,7 @@
               <guimenu>編集(E)</guimenu>
               <guisubmenu>設定(O)</guisubmenu>
             </menuchoice>とクリックしてください。
-            設定ウィンドウの一般カテゴリにある、<guilabel>「スプラッシュ画面を非表示(D)」</guilabel>のチェックを外します。
+            設定ウィンドウの一般カテゴリにある、<guilabel>「スプラッシュ画面を非表示(D)」</guilabel>にチェックを付けてください。
           </para>
         </answer>
       </qandaentry>
