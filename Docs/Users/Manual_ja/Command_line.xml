@@ -33,6 +33,8 @@
 
       <arg><option>/x</option></arg>
 
+      <arg><option>/xq</option></arg>
+
       <arg><option>/s</option></arg>
 
       <arg choice="opt" rep="norepeat"><option>/ul</option></arg>
@@ -159,6 +161,11 @@
       例えば、もしファイルがマージか編集の結果として同一となった場合です。
       このパラメータは、WinMergeを外部アプリケーションとして使用したり、
       差異のないファイルを無視することによって余分なステップを取り除きたい場合に便利です。</para>
+    </listitem>
+
+    <listitem>
+      <para><option>/xq</option> is similar to <option>/x</option> but does not
+      show the message about identical files. </para>
     </listitem>
 
     <listitem>
