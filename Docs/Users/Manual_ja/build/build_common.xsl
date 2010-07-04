@@ -38,6 +38,10 @@ html/param.xsl  parameters
 <xsl:param name="use.id.as.filename" select="1"/>
 <xsl:param name="chunker.output.indent" select="'yes'"></xsl:param>
 <xsl:param name="chunk.section.depth" select="0" />
+<xsl:param name="htmlhelp.encoding" select="'Shift_JIS'"/>
+<xsl:param name="chunker.output.encoding" select="'Shift_JIS'"/>
+<xsl:param name="l10n.gentext.language" select="'ja'"/>
+<xsl:param name="l10n.gentext.default.language" select="'ja'"/>
 <xsl:param name="generate.toc">book toc,title article nop</xsl:param>
 <xsl:param name="toc.section.depth">1</xsl:param>
 <xsl:param name="runinhead.default.title.end.punct">:</xsl:param>
