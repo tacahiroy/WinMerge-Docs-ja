@@ -4,8 +4,8 @@
       <primary>フォルダの比較</primary>
     </indexterm></title>
 
-  <para>This topic describes how to compare and merge folders using the Folder
-  Compare window.</para>
+    <para>このトピックは、フォルダ比較ウィンドウを使用して、
+      フォルダを比較・マージする方法を説明しています。</para>
 
   <xi:include href="Text_encoding.xml"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
@@ -13,24 +13,24 @@
   <section id="Compare_dirs_starting">
     <title>フォルダ比較操作の開始</title>
 
-    <para>You can begin a folder compare operation from either the WinMerge
-    window or a Command Prompt window.</para>
+    <para>WinMergeウィンドウ、または、コマンドプロンプトから、
+      フォルダ比較操作を開始できます。</para>
 
     <variablelist>
       <varlistentry>
         <term>From the WinMerge window</term>
 
         <listitem>
-          <para>Click <menuchoice>
-              <guimenu>File</guimenu>
+          <para><menuchoice>
+              <guimenu>ファイル</guimenu>
 
-              <guimenuitem>Open</guimenuitem>
-            </menuchoice>. Use the Select Files or Folders dialog to specify the
-          left and right folders to compare. By default, the compare includes
-          all files in the folders, and is nonrecursive (does not include
-          subfolders). To change any of these options and for more details about
-          the Select Files or Folder dialog, see <xref
-          linkend="Open_paths" />.</para>
+              <guimenuitem>開く</guimenuitem>
+            </menuchoice>をクリックしてください。ファイルまたはフォルダの選択ダイアログを使用して、
+            比較する1と2のフォルダを指定してください。
+          デフォルトでは、フォルダ中のすべてのファイルが比較対象に含まれ、サブフォルダは比較対象に含まれません。
+          これらのオプションの変更と、
+          ファイルまたはフォルダの選択ダイアログのより詳細な情報については、<xref
+          linkend="Open_paths" />を参照してください。</para>
         </listitem>
       </varlistentry>
 
@@ -38,12 +38,12 @@
         <term>From a Command Prompt window</term>
 
         <listitem>
-          <para>Run <command>WinMergeU.exe</command>, which is in your WinMerge
-          install directory. In your command arguments, include the left and
-          right folders to compare. By default, the compare includes all files
-          in the folders, and is nonrecursive. To change any of these options
-          and for information about other command options, see <xref
-          linkend="Command_line" />.</para>
+          <para>WinMergeインストールディレクトリにある、<command>WinMergeU.exe</command>を起動してください。
+          コマンド引数には、比較する1と2のフォルダを含みます。
+          デフォルトでは、フォルダ中のすべてのファイルが比較対象に含まれ、サブフォルダは比較対象に含まれません。
+          これらのオプションの変更と、
+          その他のコマンドオプションの情報については、<xref
+          linkend="Command_line" />を参照してください。</para>
         </listitem>
       </varlistentry>
     </variablelist>
@@ -58,17 +58,18 @@
             </indexterm></term>
 
           <listitem>
-            <para>Recursive mode is useful for detecting and manipulating
-            different files in an entire folder structure. However, it can be
-            slow if there are many subfolders and files. For deeply nested
-            directory structures, consider enabling the <xref
-            linkend="Compare_dirs_treeview" /> for easier navigation of the
-            Compare window.</para>
+            <para>再帰モードは、全体のフォルダ構造の中から、差異ファイルを見つけたり、
+              操作したりするのに便利です。
+             しかしながら、多くのサブフォルダやファイルがある場合は遅くなります。
+            深くネストしたディレクトリ構造を、比較ウィンドウで操作し易くするために
+            <xref linkend="Compare_dirs_treeview" />を有効にすることを考えてください。
+            </para>
 
-            <para>Nonrecursive mode has the advantage of speed when there are
-            many subfolders that need not be examined. Also, the display can be
-            easier to manage because it shows items in only selected
-            folders.</para>
+            <para>非再帰モードは、多くのサブフォルダが存在しても、
+              それらを検査する必要がないため、速度面で有利です。
+              さらに、表示の管理もより簡単です。
+              なぜなら、選択されたフォルダの項目だけを表示すれば良いからです。
+            </para>
           </listitem>
         </varlistentry>
 
@@ -76,18 +77,17 @@
           <term>Quick Contents comparisons</term>
 
           <listitem>
-            <para>The <guilabel>Quick Contents</guilabel> method for file
-            comparison, described in <xref linkend="Configuration" />, can be
-            useful when you compare big binary files; and it is automatically
-            used to compare files bigger than 4 MB. Possible disadvantages are
-            that line filters do not work, and there is no difference counts
-            information in the Folder Compare window. This should not matter In
-            most cases, because such large files are usually binary.</para>
+            <para>ファイル比較のための<guilabel>クイックコンテンツ</guilabel>方式は、
+              <xref linkend="Configuration" />で説明されています。これは、
+              巨大なバイナリファイルを比較する時に便利です。そしてそれは、4MBを超えるファイル比較の場合、自動的に使用されます。
+              起こりうる不都合としては、ラインフィルタが効かないことと、フォルダ比較ウィンドウに差異カウントが表示されません。
+              しかし、これは、ほとんどのケースで取るに足らないことです。
+              なぜなら、そのような巨大なファイルは、たいていバイナリだからです。</para>
 
-            <para>To use this method, configure it before your compare
-            operation: in the Compare page of the WinMerge options, click the
-            <guilabel>File Compare method</guilabel> drop-down menu and choose
-            <guimenuitem>Quick Contents</guimenuitem>.</para>
+            <para>この方式を使用するために、比較操作をする前に設定をしてください。
+              WinMergeオプションの比較カテゴリで、
+            <guilabel>ファイル比較方法</guilabel>のドロップダウンメニューをクリックし、
+            <guimenuitem>クイックコンテンツ</guimenuitem>を選択してください。</para>
           </listitem>
         </varlistentry>
 
@@ -95,12 +95,12 @@
           <term>For advanced users</term>
 
           <listitem>
-            <para>You can change the 4 MB file size limit of the
-            <guilabel>Compare by Quick Contents</guilabel>, for example if you
-            have a lot of very big text files. To do so, run the Windows
-            <command>regedit</command> command, navigate to this keyword, and
-            modify its value: <screen>HKEY_CURRENT_USER\Software\Thingamahoochie\WinMerge\Settings\QuickMethodLimit</screen>As
-            usual, be careful when editing the registry!</para>
+            <para>例えば、とても大きなテキストファイルがたくさんある場合など、
+              <guilabel>クイックコンテンツ</guilabel>の境界ファイルサイズを4MBから変更することが可能です。
+              その方法は、Windowsの
+            <command>regedit</command>コマンドを起動し、
+            <screen>HKEY_CURRENT_USER\Software\Thingamahoochie\WinMerge\Settings\QuickMethodLimit</screen>
+            このキーワードを探し、値を変更してください。レジストリの編集は慎重に行ってください。</para>
           </listitem>
         </varlistentry>
       </variablelist>
@@ -111,8 +111,8 @@
           <primary>フォルダ比較状況ウインドウ</primary>
         </indexterm></title>
 
-      <para>When you start a folder compare operation, WinMerge displays this
-      status window:</para>
+        <para>フォルダ比較操作を開始すると、
+          WinMergeはこのステータスウィンドウを表示します。</para>
 
       <mediaobject>
         <imageobject>
@@ -124,23 +124,23 @@
         </textobject>
       </mediaobject>
 
-      <para>If the compare operation is quick, you might not notice the Progress
-      window, which closes as soon as WinMerge displays the Folder Compare
-      result. The Progress window shows the number of files and folders to be
-      included in the operation, and the number compared so far. The progress
-      bar graphically represents the Items compared.</para>
+      <para>比較操作が素早い場合、WinMergeはフォルダ比較結果を表示して、
+        直ぐにそれを閉じるため、プログレスウィンドウに気づかないかもしれません。
+        プログレスウィンドウは、その操作対象に含まれるファイルとフォルダの数と、
+        比較した項目の数を表示します。
+        プログレスバーは、比較した項目をグラフィカルに表示します。</para>
 
       <note>
-        <para>Because the files compares are usually of different sizes, the
-        status data does not indicate the time used or remaining. For example, a
-        50/100 ratio does not necessarily mean that half of the compare
-        operation time is expired.</para>
+        <para>ファイル比較では大抵サイズが異なるため、
+          ステータスは、経過時間、または、残り時間を表示しません。
+          例えば、50/100という比率は、必ずしも比較操作の半分の時間が完了した、
+          ということを表しません。</para>
       </note>
 
-      <para>You can click <guibutton>Stop</guibutton> to terminate the operation
-      at any time before the compare operation finishes. The Folder Compare
-      window is displayed with the results calculated at that time, omitting any
-      uncompleted results.<!--I'm not able to reproduce the behavior documented in the earlier version of this topic: 
+      <para><guibutton>停止</guibutton>をクリックすると、比較操作が終了する前に、いつでも操作を中止できます。
+        <!-- FIXME: 以下、ちょっと何言ってるかわからない。 -->
+        フォルダ比較ウィンドウは、未完了の結果を省略して、その時に計算された結果で表示されます。
+        <!--I'm not able to reproduce the behavior documented in the earlier version of this topic: 
 I get the partial list, but no Abort indicator.--></para>
     </section>
   </section>
@@ -160,8 +160,8 @@ I get the partial list, but no Abort indicator.--></para>
         <secondary>in Folder Compare window</secondary>
       </indexterm></title>
 
-    <para>The Folder Compare window shows the result of a folder compare. Two
-    different views are available:</para>
+    <para>フォルダ比較ウィンドウは、フォルダ比較の結果を表示します。
+    二つの異なるビューが使用できます。</para>
 
     <variablelist>
       <varlistentry id="Compare_dirs_tabview">
@@ -170,8 +170,8 @@ I get the partial list, but no Abort indicator.--></para>
           </indexterm></term>
 
         <listitem>
-          <para>In tabular view, each file or folder in the result is listed in
-          a row. This is the default view. Here's an example:</para>
+          <para>テーブルビューでは、ファイルやフォルダは、それぞれが行に表示されます。
+            これは、デフォルトのビューです。ここに例を示します。</para>
 
     <mediaobject>
       <imageobject>
@@ -188,9 +188,9 @@ I get the partial list, but no Abort indicator.--></para>
           </indexterm></term>
 
         <listitem>
-          <para>In the tree view, folders are expandable and collapsible,
-          containing files and subfolders. The tree view is available only in
-          recursive compares. For example:</para>
+          <para>ツリービューでは、フォルダは含んでいるファイルやサブフォルダを、展開したり畳んだりできます。
+            ツリービューは、再帰比較(サブフォルダを含む)モードでのみ有効です。
+            例えば、</para>
 
           <mediaobject>
             <imageobject>
@@ -201,51 +201,51 @@ I get the partial list, but no Abort indicator.--></para>
 
           <itemizedlist>
             <listitem>
-              <para>To expand or collapse a single folder, click the plus or
-              minus control beside the folder icon, or double-click anywhere in
-              the row.</para>
+              <para>単独のフォルダを展開したり、折り畳んだりするには、
+                フォルダアイコンの隣にある、プラス、または、マイナス記号をクリックするか、
+                行のどこかをダブルクリックしてください。</para>
             </listitem>
 
             <listitem>
-              <para>To expand or collapse all folders in the view, click
+              <para>ビュー内のすべてのフォルダを展開、または、折りたたむには、メニューの
               <menuchoice>
-                  <guimenu>View</guimenu>
+                  <guimenu>表示</guimenu>
 
-                  <guimenuitem>Expand All Subfolders</guimenuitem>
-                </menuchoice> or <menuchoice>
-                  <guimenu>View</guimenu>
+                  <guimenuitem>すべてのサブフォルダを展開する</guimenuitem>
+                </menuchoice>をクリック、または、<menuchoice>
+                  <guimenu>表示</guimenu>
 
-                  <guimenuitem>Collapse All Subfolders</guimenuitem>
-                </menuchoice> in the menu.</para>
+                  <guimenuitem>すべてのサブフォルダを折りたたむ</guimenuitem>
+                </menuchoice>をクリックしてください。</para>
             </listitem>
           </itemizedlist>
         </listitem>
       </varlistentry>
     </variablelist>
 
-    <para>During a recursive compare (that is, if you enabled the
-    <option>Include Subfolders</option> option in the Select Files or Folders
-    dialog when you launched the compare), you can click <menuchoice>
-        <guimenu>View</guimenu>
+    <para>再帰的に比較している間に、
+      (ファイルまたはフォルダの選択ダイアログで、<option>サブフォルダを含む</option>オプションを有効にした場合)、
+      <menuchoice>
+        <guimenu>表示</guimenu>
 
-        <guimenuitem>Tree Mode</guimenuitem>
-      </menuchoice> command to switch between the two views. The <menuchoice>
-        <guimenu>View</guimenu>
+        <guimenuitem>ツリー表示</guimenuitem>
+      </menuchoice>をクリックして、二つのビューを切り替えることができます。<menuchoice>
+        <guimenu>表示</guimenu>
 
-        <guimenuitem>Tree Mode</guimenuitem>
-      </menuchoice> command is disabled for non-recursive compares.</para>
+        <guimenuitem>ツリー表示</guimenuitem>
+      </menuchoice>コマンドは、非再帰比較モードでは無効です。</para>
 
-    <para>In both views, the columns show different types of data for each
-    result item. You can control the sorting of items in the view by clicking a
-    column heading. This changes the sorting in two ways:</para>
+    <para>両方のビューで、列はそれぞれの結果項目に対して、異なるタイプのデータを表示します。
+      ビューで、列ヘッダをクリックすることで、項目のソート順を操作できます。
+      ソート順を変更するには、二つの方法があります。</para>
 
     <itemizedlist>
       <listitem>
-        <para>Toggles (reverses) the sort order of the column.</para>
+        <para>列のソート順をトグル(反対に)する。</para>
       </listitem>
 
       <listitem>
-        <para>Resorts all the rows in the view by the column.</para>
+        <para>その列によって、ビュー中の全行を再ソートする。</para>
       </listitem>
     </itemizedlist>
 
@@ -260,24 +260,24 @@ I get the partial list, but no Abort indicator.--></para>
           <secondary>results view</secondary>
         </indexterm></title>
 
-      <para>The Folder Compare window looks and behaves slightly differently for
-      recursive and nonrecursive compares:</para>
+        <para>フォルダ比較ウィンドウは、再帰比較モードと非再帰比較モードで、
+          見た目と挙動が少しばかり異なります。</para>
 
       <variablelist>
         <varlistentry>
           <term>Recursive folder compare</term>
 
           <listitem>
-            <para>The compare result includes all subfolders. You can control
-            the types of items displayed within the folders by choosing the
-            options in the <guimenu>View</guimenu> menu (for example,
-            <guimenuitem>Show Identical Items</guimenuitem>). The Folder column
-            is always empty: only the files within the folders are displayed. To
-            see an item's subfolder, look at its path in the Compare result
-            column. Folders that exist on only one side are displayed if one of
-            the <guimenu>View</guimenu> menu options, <guimenuitem>Show Left
-            Unique Files</guimenuitem> or <guimenuitem>Show Left Unique
-            Files</guimenuitem>, is enabled.</para>
+            <para>比較結果は、すべてのサブフォルダが含まれています。
+              <guimenu>表示</guimenu>メニューのオプションによって、フォルダに含まれる項目のうち、
+             表示される項目のタイプをコントロールできます(例えば、
+            <guimenuitem>同一項目の表示</guimenuitem>)。 フォルダ列は、常に空で、
+            フォルダの中にあるファイルだけが表示されています。
+            一つの項目のサブフォルダを見て、比較結果列の項目のパスを見てください。
+            <guimenu>表示</guimenu>メニューの、<guimenuitem>左のみに存在する項目の表示</guimenuitem>、
+            または、<guimenuitem>右のみに存在する項目の表示</guimenuitem>が有効になっている場合、
+            片方だけに存在するフォルダが表示されます。
+            <!-- XXX: 原文では、両方'Show Left Unique Files'となっているが間違いだろう --></para>
           </listitem>
         </varlistentry>
 
@@ -285,9 +285,9 @@ I get the partial list, but no Abort indicator.--></para>
           <term>Nonrecursive folder compare</term>
 
           <listitem>
-            <para>The result includes only the files and subfolders at the top
-            level of the selected folders. However, you can browse to any
-            subfolder that you want to compare.</para>
+            <para>結果は、選択されたフォルダのファイルと、最上位のサブフォルダのみを含んでいます。
+              しかしながら、いくつかのサブフォルダを比較したいなら、
+              それらをブラウズすることができます。</para>
           </listitem>
         </varlistentry>
       </variablelist>
@@ -300,9 +300,9 @@ I get the partial list, but no Abort indicator.--></para>
           <secondary>Folder Compare window</secondary>
         </indexterm></title>
 
-      <para>In the Compare Folders window, files and folders are compared and
-      divided into several categories. In each row, the category is clearly
-      identified in the left column with one of these icons :</para>
+        <para>フォルダ比較ウィンドウの中で、ファイルとフォルダは比較され、
+          いくつかのカテゴリに分類されます。
+          カテゴリは、各行の左側の列で、これらのアイコンのうちの一つにより明確に識別されます。</para>
 
       <simplelist>
         <member><inlinemediaobject>
@@ -310,114 +310,114 @@ I get the partial list, but no Abort indicator.--></para>
               <imagedata contentwidth="16"
                          fileref="screenshots/equaltextfile.png" format="PNG" />
             </imageobject>
-          </inlinemediaobject> Identical text files</member>
+          </inlinemediaobject> テキストファイル</member>
 
         <member><inlinemediaobject>
             <imageobject>
               <imagedata contentwidth="16" fileref="screenshots/binary.png"
                          format="PNG" />
             </imageobject>
-          </inlinemediaobject> Identical binary files</member>
+          </inlinemediaobject> バイナリファイル</member>
 
         <member><inlinemediaobject>
             <imageobject>
               <imagedata contentwidth="16" fileref="screenshots/equal.png"
                          format="PNG" />
             </imageobject>
-          </inlinemediaobject> Identical files (type undetermined)</member>
+          </inlinemediaobject> ファイル(タイプ未確定)</member>
 
         <member><inlinemediaobject>
             <imageobject>
               <imagedata contentwidth="16"
                          fileref="screenshots/notequaltextfile.png" format="PNG" />
             </imageobject>
-          </inlinemediaobject> Different text files</member>
+          </inlinemediaobject> 異なるテキストファイル</member>
 
         <member><inlinemediaobject>
             <imageobject>
               <imagedata contentwidth="16" fileref="screenshots/binarydiff.png"
                          format="PNG" />
             </imageobject>
-          </inlinemediaobject> Different binary files</member>
+          </inlinemediaobject> 異なるバイナリファイル</member>
 
         <member><inlinemediaobject>
             <imageobject>
               <imagedata contentwidth="16" fileref="screenshots/notequal.png"
                          format="PNG" />
             </imageobject>
-          </inlinemediaobject> Different files (type undetermined)</member>
+          </inlinemediaobject> 異なるファイル(タイプ未確定)</member>
 
         <member><inlinemediaobject>
             <imageobject>
               <imagedata contentwidth="16" fileref="screenshots/foldersame.png"
                          format="PNG" />
             </imageobject>
-          </inlinemediaobject> Identical folders (in tree view only)</member>
+          </inlinemediaobject> 同一のフォルダ(ツリービューのみ)</member>
 
         <member><inlinemediaobject>
             <imageobject>
               <imagedata contentwidth="16" fileref="screenshots/folderdiff.png"
                          format="PNG" />
             </imageobject>
-          </inlinemediaobject> Different folders (in tree view only)</member>
+          </inlinemediaobject> 異なるフォルダ(ツリービューのみ)</member>
 
         <member><inlinemediaobject>
             <imageobject>
               <imagedata contentwidth="16" fileref="screenshots/lfolder.png"
                          format="PNG" />
             </imageobject>
-          </inlinemediaobject> Left-only folders</member>
+          </inlinemediaobject> 左のみに存在するフォルダ</member>
 
         <member><inlinemediaobject>
             <imageobject>
               <imagedata contentwidth="16" fileref="screenshots/rfolder.png"
                          format="PNG" />
             </imageobject>
-          </inlinemediaobject> Right-only folders</member>
+          </inlinemediaobject> 右のみに存在するフォルダ</member>
 
         <member><inlinemediaobject>
             <imageobject>
               <imagedata contentwidth="16" fileref="screenshots/lfile.png"
                          format="PNG" />
             </imageobject>
-          </inlinemediaobject> Left-only files</member>
+          </inlinemediaobject> 左のみに存在するファイル</member>
 
         <member><inlinemediaobject>
             <imageobject>
               <imagedata contentwidth="16" fileref="screenshots/rfile.png"
                          format="PNG" />
             </imageobject>
-          </inlinemediaobject> Right-only files</member>
+          </inlinemediaobject> 右のみに存在するファイル</member>
 
         <member><inlinemediaobject>
             <imageobject>
               <imagedata contentwidth="16" fileref="screenshots/folderskip.png"
                          format="PNG" />
             </imageobject>
-          </inlinemediaobject> Skipped (filtered) directories</member>
+          </inlinemediaobject> スキップ(フィルタ)されたフォルダ</member>
 
         <member><inlinemediaobject>
             <imageobject>
               <imagedata contentwidth="16" fileref="screenshots/fileskip.png"
                          format="PNG" />
             </imageobject>
-          </inlinemediaobject> Skipped (filtered) files</member>
+          </inlinemediaobject> スキップ(フィルタ)されたファイル</member>
 
         <member><inlinemediaobject>
             <imageobject>
               <imagedata contentwidth="16" fileref="screenshots/error.png"
                          format="PNG" />
             </imageobject>
-          </inlinemediaobject> Items that can't be compared; for example when
-        another program has locked the file.</member>
+          </inlinemediaobject> 比較できなかった項目。例えば、
+        ファイルが他のプログラムにロックされていたなど。</member>
 
         <member><inlinemediaobject>
             <imageobject>
               <imagedata contentwidth="16" fileref="screenshots/aborted.png"
                          format="PNG" />
             </imageobject>
-          </inlinemediaobject> Aborted item. WinMerge did not finish comparing
-        this item when the compare was stopped. The result is unknown.</member>
+          </inlinemediaobject> 中断された項目。WinMergeは、比較が中止された時に、
+          この項目の比較を終了していなかった。結果は不明。</member>
       </simplelist>
     </section>
 
@@ -430,10 +430,10 @@ I get the partial list, but no Abort indicator.--></para>
         <secondary>folder compare</secondary>
       </indexterm>
 
-      <para>You can use the mouse as well as <link
-      linkend="Shortcut_keys">keyboard</link> and context menu shortcuts to
-      navigate the Folder Compare window. You can also use the toolbar buttons.
-      For example, the <inlinemediaobject>
+      <para><link
+          linkend="Shortcut_keys">キーボード</link>と同様にマウスを使用して、
+        フォルダ比較ウィンドウをコンテキストメニューでナビゲートできます。
+        例えば、<inlinemediaobject>
           <imageobject>
             <imagedata contentdepth="15" fileref="screenshots/nextdiff_btn.png" />
           </imageobject>
@@ -441,23 +441,23 @@ I get the partial list, but no Abort indicator.--></para>
           <textobject>
             <phrase>Next Difference button</phrase>
           </textobject>
-        </inlinemediaobject> <guimenuitem>Next Difference</guimenuitem> button
-      finds the next different file or folder and selects it.</para>
+        </inlinemediaobject> <guimenuitem>次の差異</guimenuitem>ボタンは、
+      ファイル、または、フォルダの次の差異を見つけ、選択します。</para>
 
       <note>
-        <para>Unique files and folders are navigated in the same way as
-        different ones.</para>
+        <para><!-- FIXME: ちょっと何言ってるかわからない -->
+          ユニークなファイルやフォルダは、異なるそれと同様の方法でナビゲートされます。</para>
       </note>
 
-      <para>You can select multiple files and folders. However, some operations
-      (like <command>Rename</command>) are not available with multiple
-      selections.</para>
+      <para>複数のファイルやフォルダを選択することができます。しかしながら、いくつかの操作
+      (<command>リネーム</command>など)は、複数選択時は無効です。
+      </para>
 
-      <para>Use the navigation buttons (<guibutton>Next Difference</guibutton>,
-      <guibutton>Previous Difference</guibutton>, and so on) to step through
-      differences in the compared files. Use WinMerge functions to merge
-      contents by copying, moving, or delete one or more files or
-      subfolders.</para>
+      <para>ナビゲーションボタンを使って、比較されたファイル中の差異を(<guibutton>次の差異</guibutton>,
+      <guibutton>前の差異</guibutton>など)横断してください。
+      WinMergeの機能を使って、
+      ファイルやサブフォルダをマージ、コピー、移動、または、削除してください。
+      </para>
     </section>
 
     <section>
@@ -469,18 +469,18 @@ I get the partial list, but no Abort indicator.--></para>
         <secondary>using multiple</secondary>
       </indexterm>
 
-      <para>By default, the WinMerge window displays a single File Compare or
-      Folder Compare window.</para>
+      <para>デフォルトでは、WinMergeウィンドウは、 単一ファイル、
+        または、フォルダの比較ウィンドウを表示します。</para>
 
-      <para>In single compare mode, of you start a file or folder comparison
-      while a Compare window is currently open, the current File Compare window
-      is closed if there are no changes in either side. But if WinMerge detects
-      unsaved changes (for example, if you have merged or edited a
-      file),.WinMerge prompts you to save or discard your changes before opening
-      a new File Compare window.</para>
+      <para>単一比較モードで、比較ウィンドウが開いている間にファイルやフォルダ比較を開始すると、
+      両方のファイルに変更が無い場合、現在のファイル比較ウィンドウは閉じられます。
+      しかし、WinMergeは、未保存の変更を検出し
+      (例えば、ファイルをマージ、または、編集した場合)、
+      新しいファイル比較ウィンドウを開く前に、
+      変更を保存するか破棄するかを尋ねます。</para>
 
-      <para>For example, in the next screen shot WinMerge gives you a chance to
-      save changes detected in the right side file:</para>
+    <para>例えば、次のスクリーンショットは、
+      右側のファイルで検出された変更を保存するチャンスを与えています。</para>
 
       <mediaobject>
         <imageobject>
@@ -493,16 +493,16 @@ I get the partial list, but no Abort indicator.--></para>
         </textobject>
       </mediaobject>
 
-      <para>If you want to work with multiple compare operations simultaneously,
-      consider setting (checking) the <guilabel>Enable multiple compare windows
-      for Folder compare</guilabel> option, which is disabled by default. With
-      this option enabled, you can open multiple File Compare windows without
-      the intervening Save step.</para>
+      <para>一度に複数の比較操作をしたい場合、
+        <guilabel><!-- TODO: どこにある？ -->Enable multiple compare windows
+          for Folder compare</guilabel>オプションの設定を検討してください。これは、デフォルトでは無効です。
+        このオプションが有効になっていると、保存操作に割り込まれずに、
+        複数のファイル比較をウィンドウを開くことができます。</para>
 
-      <para>When you open multiple Compare windows, they're displayed by default
-      as individually resizeable child windows within the WinMerge window. This
-      example shows a Folder Compare window — the File Compare window has
-      similar child windows:</para>
+      <para>複数の比較ウィンドウを開いた時、デフォルトでは、
+        WinMergeウィンドウの中に、個々にリサイズ可能な子ウィンドウとして表示されます。
+        この例は、フォルダ比較ウィドウを示しています。
+        ファイル比較ウィンドウは、同じような子ウィンドウを持っています。</para>
 
       <mediaobject>
         <imageobject>
@@ -515,33 +515,33 @@ I get the partial list, but no Abort indicator.--></para>
         </textobject>
       </mediaobject>
 
-      <para>You can control the layering of multiple windows in either of two
-      ways:</para>
+      <para>複数ウィンドウレイヤは、
+        二つのうちのどちらかの方法で操作することができます。</para>
 
       <itemizedlist>
         <listitem>
-          <para>Control the windows directly, for example by clicking a title
-          bar to bring its window to the top, or minimizing a window.</para>
+          <para>ウィンドウを直接操作する。
+            例えば、タイトルバーをクリックしてウィンドウを上位もってくるか、ウィンドウを最小化する。</para>
         </listitem>
 
         <listitem>
-          <para>Click the <guimenu>Window</guimenu> menu, which lists the
-          windows that are currently open, and choose the window that you want
-          to bring to the top.</para>
+          <para><guimenu>ウィンドウ</guimenu>メニューをクリックして、
+            現在開いているウィンドウリストから、
+            手前に持ってきたいウィンドウを選ぶ。</para>
         </listitem>
       </itemizedlist>
 
       <section>
-        <title>Using tabs with maximized Compare windows<indexterm>
+        <title>最大化された比較ウィンドウでタブを使う。<indexterm>
             <primary>Compare window</primary>
 
             <secondary>using tabs when maximizing</secondary>
           </indexterm></title>
 
-        <para>Often, it's convenient to maximize your Compare window (by
-        clicking its Maximixe button). The window then fills all the available
-        space in the WinMerge window. The screen shot below shows a maximized
-        Compare window.</para>
+        <para>しばしば、(最大化ボタンをクリックして)比較ウィンドウを最大化すると便利です。
+        ウィンドウは、WinMergeウィンドウ内のすべての有効なスペースに広がります。
+        下のスクリーンショットは、
+        最大化された比較ウィンドウを示しています。</para>
 
       <mediaobject>
         <imageobject>
@@ -554,9 +554,9 @@ I get the partial list, but no Abort indicator.--></para>
         </textobject>
       </mediaobject>
 
-        <para>When you maximize one Compare window, any other Compare windows
-        are hidden, as shown in the preceding screen shot. To access those
-        windows, you could return to the default view by clicking the
+      <para>一つの比較ウィンドウを最大化した時、前のスクリーンショットで示したように、
+        他の比較ウィンドウは隠されます。
+        これらのウィンドウへアクセスするには、
         <inlinemediaobject>
           <imageobject>
             <imagedata contentwidth="15" fileref="screenshots/restore_btn.png" />
@@ -565,17 +565,17 @@ I get the partial list, but no Abort indicator.--></para>
           <textobject>
             <phrase>Restore button</phrase>
           </textobject>
-          </inlinemediaobject> Restore button. A better solution is to enable
-        tabs by setting (checking) <menuchoice>
-          <guimenu>View</guimenu>
+        </inlinemediaobject>復元ボタンをクリックして、
+        デフォルトビューに戻る必要があります。<menuchoice>
+          <guimenu>表示</guimenu>
 
-          <guimenuitem>Tab Bar</guimenuitem>
-        </menuchoice>.</para>
+          <guimenuitem>タブバー</guimenuitem>
+        </menuchoice>を有効にするのは、良い解決策です。</para>
 
-      <para>When you display the Tab bar, each Compare window has a tab that
-      shows the filenames of the two compared files. Now, you can easily
-      identify and display any available Compare window, and the selected
-      Compare window remains maximized:</para>
+        <para>タブバーを表示する場合、各比較ウィンドウは、
+          二つの比較ファイル名が表示されたタブを持ちます。
+        これで、選択された比較ウィンドウが最大化されたまま、
+        これらの有効な比較ウィンドウを、より簡単に識別・表示することができます。</para>
 
       <mediaobject>
         <imageobject>
@@ -602,15 +602,15 @@ I get the partial list, but no Abort indicator.--></para>
         <secondary>file operations</secondary>
       </indexterm></title>
 
-    <para>The Folder Compare window supports common operations on files, like
-    editing, copying, deleting, moving, and renaming (moving is equivalent to a
-    copy operation followed by a delete). You can use these file operations and
-    some special WinMerge functions to merge the contents of folders. You can
-    also open files using associated programs or external editors.</para>
+    <para>フォルダ比較ウィンドウは、編集、コピー、削除、移動やリネームなど、ファイルに対する一般的な操作をサポートしています
+    (移動は、コピーして削除するのと等価です)。
+    これらのファイル操作と、フォルダコンテンツのマージなど、
+    幾つかの特別なWinMergeの機能を使用することができます。
+    ファイルを、関連付られたプログラム、または、外部エディタで開くこともできます。.</para>
 
-    <para>The most convenient way to perform most of these tasks is to
-    right-click one or more items and use the context menu, where all file
-    operations are available.</para>
+    <para>これらのタスクを実行するための最も手近な方法は、
+      一つか複数の項目を右クリックして、
+      すべてのファイル操作が有効なコンテキストメニューを使うことです。</para>
 
     <section>
       <title>ファイルのコピー<indexterm>
@@ -619,19 +619,19 @@ I get the partial list, but no Abort indicator.--></para>
           <secondary>in Folder Compare window</secondary>
         </indexterm></title>
 
-      <para>The most common file operation in the Folder Compare window is
-      copying files from side to side. There are several forms of the WinMerge
-      copy function: all of them copy only files that are different, because
-      copying identical files is of no use in merging. The copy functions are
-      available in the context menu, in the WinMerge menu, and in the
-      toolbar:</para>
+      <para>フォルダ比較ウィンドウ中で最も一般的なファイル操作は、
+      左右にファイルをコピーすることです。WinMergeのコピー機能には、幾つかの形があります。
+      同一ファイルのコピーはマージにおいて使用しないので、異なるファイルのみをすべてコピーする。
+      このコピー機能は、
+      コンテキストメニュー、WinMergeメニュー、そしてツールバーで有効です。
+      </para>
 
       <section>
         <title>コンテキストメニューの[コピー]メニュー項目</title>
 
-        <para>In the Folder Compare window's context menu, the
-        <guimenuitem>Copy</guimenuitem> item has a submenu with four
-        shortcuts:</para>
+        <para>フォルダ比較ウィンドウのコンテキストメニューで、
+        <guimenuitem>コピー</guimenuitem>は、4つのショートカットを含んだサブメニュー項目です。
+        </para>
 
         <mediaobject>
           <imageobject>
@@ -646,23 +646,23 @@ I get the partial list, but no Abort indicator.--></para>
 
         <itemizedlist>
           <listitem>
-            <para><guimenuitem>Left to Right</guimenuitem> and
-            <guimenuitem>Right to Left</guimenuitem> copy the selection (or just
-            the items in the selection that can be copied) from one side to the
-            other. In the example, the suffix <guilabel>(2 of 4)</guilabel>
-            indicates that only the two files that are different will be copied;
-            the identical files will not. These shortcuts available only if any
-            of the files you select is different: if you select only identical
-            files, the shortcuts are unavailable.</para>
+            <para><guimenuitem>左から右</guimenuitem>と
+            <guimenuitem>右を左に</guimenuitem>は、一方から他方へ選択項目をコピーします。
+            例の中で、後ろの<guilabel>(2 of 4)</guilabel>は、
+            コピーされる項目の内、
+            2ファイルに差異があるということを示しています(同一のファイルはコピーされません)。
+            これらのショートカットは、差異のあるファイルを選択した場合にのみ有効です。
+            ですので、同一のファイルだけを選択した場合、
+            このショートカットは無効になっています。</para>
           </listitem>
 
           <listitem>
-            <para><guimenuitem>Left to...</guimenuitem> and <guimenuitem>Right
-            to...</guimenuitem> enable you to specify a copy target directory in
-            your system, instead of a compared folder. When the Browse for
-            Folder dialog opens, navigate to the target directory on your system
-            (or create a new target folder) and click
-            <guibutton>OK</guibutton>.</para>
+            <para><guimenuitem>左を...</guimenuitem>と<guimenuitem>右を
+                ...</guimenuitem>で、比較フォルダの代わりに、
+              システム中のコピー先フォルダを指定することができます。
+              フォルダダイアログが開くので、
+              お使いのシステム中のフォルダを選択(または、フォルダを新規作成)し、
+            <guibutton>OK</guibutton>をクリックしてください。</para>
           </listitem>
         </itemizedlist>
       </section>
@@ -670,16 +670,16 @@ I get the partial list, but no Abort indicator.--></para>
       <section>
         <title>ツールバーと[コピー]メニューコマンド</title>
 
-        <para>In the Folder Compare toolbar, <inlinemediaobject>
+        <para>フォルダ比較ツールバーの、<inlinemediaobject>
             <imageobject>
               <imagedata contentwidth="17"
                          fileref="screenshots/copyr_button.png" />
             </imageobject>
 
             <textobject>
-              <phrase>Copy Right button</phrase>
+              <phrase>右へコピーボタン</phrase>
             </textobject>
-          </inlinemediaobject> <guibutton>Copy Right</guibutton> and
+          </inlinemediaobject> <guibutton>右へコピー</guibutton>と
         <inlinemediaobject>
             <imageobject>
               <imagedata contentwidth="17"
@@ -687,12 +687,12 @@ I get the partial list, but no Abort indicator.--></para>
             </imageobject>
 
             <textobject>
-              <phrase>Copy Left button</phrase>
+              <phrase>左へコピーボタン</phrase>
             </textobject>
-          </inlinemediaobject> <guibutton>Copy Left</guibutton> accomplish the
-        same task as the <guimenuitem>Left to Right</guimenuitem> and
-        <guimenuitem>Right to Left</guimenuitem> context menu shortcuts: they
-        copy from side to side only files that are valid to copy. However, these
+          </inlinemediaobject> <guibutton>左へコピー</guibutton>は、
+          コンテキストメニューの<guimenuitem>左から右</guimenuitem>と
+          <guimenuitem>右を左に</guimenuitem>と同じ働きをします。
+          これは、they copy from side to side only files that are valid to copy. However, these
         commands do not directly display the number of files to be copied;
         instead, they display a confirmation dialog where you can check a list
         of source and target file paths.</para>
