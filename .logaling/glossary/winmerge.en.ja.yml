@@ -1,0 +1,217 @@
+---
+- source_term: Copy to Right
+  target_term: 右へコピー
+  note: メニュー項目
+- source_term: Copy to Left
+  target_term: 左へコピー
+  note: メニュー項目
+- source_term: Delete
+  target_term: 削除
+  note: メニュー項目
+- source_term: Both
+  target_term: 両側
+  note: メニュー項目
+- source_term: Left
+  target_term: 1(左)
+  note: メニュー項目
+- source_term: Right
+  target_term: 2(右)
+  note: メニュー項目
+- source_term: Send deleted files into Recycle Bin
+  target_term: 削除されたファイルをゴミ箱に移動する
+  note: オプション(システム)
+- source_term: Rename
+  target_term: 名前を変更
+  note: コンテキストメニュー項目
+- source_term: edit box
+  target_term: 編集欄
+  note: 画面コントロール
+- source_term: both sides
+  target_term: 両側
+  note: コンテキストメニュー項目(パス名をコピー、削除)
+- source_term: Open Left
+  target_term: 左を開く
+  note: コンテキストメニュー項目
+- source_term: Open Right
+  target_term: 右を開く
+  note: コンテキストメニュー項目
+- source_term: Copy Pathname
+  target_term: パス名をコピー
+  note: コンテキストメニュー項目
+- source_term: Copy Filenames
+  target_term: ファイル名をコピー
+  note: コンテキストメニュー項目
+- source_term: File
+  target_term: ファイル
+  note: メニュー項目
+- source_term: Left Read-only
+  target_term: 左側を読み取り専用
+  note: ファイル -> 読み取り専用
+- source_term: Right Read-only
+  target_term: 右側を読み取り専用
+  note: ファイル -> 読み取り専用
+- source_term: Refresh
+  target_term: 選択項目を最新に更新
+  note: メニュー(表示)
+- source_term: View
+  target_term: 表示
+  note: メニュー項目
+- source_term: Refresh Selected
+  target_term: 最新の情報に更新
+  note: メニュー(表示)
+- source_term: Zip
+  target_term: 圧縮
+  note: コンテキストメニュー(圧縮)
+- source_term: Archive support
+  target_term: アーカイブサポート
+  note: オプション項目
+- source_term: left-side
+  target_term: 左側
+  note: 
+- source_term: right-side
+  target_term: 右側
+  note: 
+- source_term: Folder Compare window
+  target_term: フォルダ比較ウィンドウ
+  note: 
+- source_term: Compare
+  target_term: 比較
+  note: メニュー(マージ -> 比較) / コンテキストメニュー(比較)
+- source_term: Merge
+  target_term: マージ
+  note: メニュー項目
+- source_term: Show Identical Items
+  target_term: 同一項目の表示
+  note: メニュー(表示)
+- source_term: Show Different Items
+  target_term: 差異項目の表示
+  note: メニュー(表示)
+- source_term: Show Left Unique Items
+  target_term: 左のみに存在する項目の表示
+  note: メニュー(表示)
+- source_term: Show Right Unique Items
+  target_term: 右のみに存在する項目の表示
+  note: メニュー(表示)
+- source_term: Show Skipped Items
+  target_term: スキップされた項目の表示
+  note: メニュー(表示)
+- source_term: Show Binary Files
+  target_term: バイナリファイルの表示
+  note: メニュー(表示)
+- source_term: Customize Columns
+  target_term: 列の設定
+  note: コンテキストメニュー項目
+- source_term: Move Up
+  target_term: 上へ
+  note: ボタン名
+- source_term: Move Down
+  target_term: 下へ
+  note: ボタン名
+- source_term: Defaults
+  target_term: デフォルト
+  note: ボタン名
+- source_term: Filename
+  target_term: ファイル名
+  note: 列名
+- source_term: Folder
+  target_term: フォルダ
+  note: 列名
+- source_term: Comparison result
+  target_term: 比較結果
+  note: 列名
+- source_term: Short Result
+  target_term: 簡易結果表示
+  note: 列名
+- source_term: Left Date
+  target_term: 左日付
+  note: 列名
+- source_term: Right Date
+  target_term: 右日付
+  note: 列名
+- source_term: Extension
+  target_term: 拡張子
+  note: 列名
+- source_term: Display Columns dialog
+  target_term: 列表示ダイアログ
+  note: 画面名
+- source_term: Binary
+  target_term: バイナリ
+  note: 列名
+- source_term: Left Attributes
+  target_term: 左属性
+  note: 列名
+- source_term: Right Attributes
+  target_term: 右属性
+  note: 列名
+- source_term: Creation Time
+  target_term: 作成日時
+  note: 列名
+- source_term: Encoding
+  target_term: エンコーディング
+  note: 列名
+- source_term: Left Size
+  target_term: 左サイズ
+  note: 列名
+- source_term: Right Size
+  target_term: 右サイズ
+  note: 列名
+- source_term: Left Size (Short)
+  target_term: 左サイズ(短縮)
+  note: 列名
+- source_term: Right Size(Short)
+  target_term: 右サイズ(短縮)
+  note: 列名
+- source_term: Newer File
+  target_term: 新しいファイル
+  note: 列名
+- source_term: Differences
+  target_term: 差異数
+  note: 列名
+- source_term: Ignored Diff
+  target_term: 無視された差異数
+  note: 列名
+- source_term: Left EOL
+  target_term: 左EOF
+  note: 列名
+- source_term: Right EOL
+  target_term: 右EOL
+  note: 列名
+- source_term: Hide Items
+  target_term: 項目を非表示
+  note: コンテキストメニュー
+- source_term: Show Hidden Items
+  target_term: 非表示の項目を表示
+  note: コンテキストメニュー
+- source_term: Add Shell menu to context menu
+  target_term: シェルメニューをコンテキストメニューに追加
+  note: オプション(シェル統合)
+- source_term: Left shell menu
+  target_term: 左側シェルメニュー
+  note: コンテキストメニュー
+- source_term: Right shell menu
+  target_term: 右側シェルメニュー
+  note: コンテキストメニュー
+- source_term: Options dialog
+  target_term: オプションダイアログ
+  note: 画面名
+- source_term: Select Files or Folders dialog
+  target_term: ファイルまたはフォルダの選択ダイアログ
+  note: 画面名
+- source_term: Exit
+  target_term: 終了
+  note: メニュー(ファイル(F))
+- source_term: Open-dialog Auto-Completion
+  target_term: 開くダイアログのオートコンプリート
+  note: オプション(一般)
+- source_term: Folder compare
+  target_term: フォルダ比較
+  note: オプション(一般)
+- source_term: File compare
+  target_term: ファイル比較
+  note: オプション(一般)
+- source_term: whitespace
+  target_term: 空白
+  note: 
+- source_term: regular text
+  target_term: 標準テキスト
+  note: 
