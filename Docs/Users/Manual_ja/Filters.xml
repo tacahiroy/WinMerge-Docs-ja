@@ -24,7 +24,7 @@
     <see>regular expressions</see>
   </indexterm></para>
   <para>
-    <!-- TODO: ちょっと自信ない-->フィルタの基本機能はシンプルです。
+    <!-- NOTE: ちょっと自信ない-->フィルタの基本機能はシンプルです。
     通常比較されるであろう、それぞれのアイテム(フォルダ、ファイル、ファイル中の行)を評価し、
     対象のアイテムがフィルタ式にマッチした場合、フィルタを適用します。
     フィルタタイプにより、アイテムは、比較に含められるか、除外されるかのどちらかです。</para>
@@ -39,7 +39,7 @@
       </indexterm></term>
       <listitem>
         <para>
-          <!-- TODO:ちょっと複雑すぎる気がする-->
+          <!-- NOTE:ちょっと複雑すぎる気がする-->
           単純なファイルマスク、または、より複雑なフィルタにより、
           ファイルフィルタ中で指定された複数の規則を適用することで、
           フォルダ比較中に含めるファイルを指定することができます。
@@ -131,8 +131,7 @@
       このシンタックスは、ファイルマスク用です:</para>
     <synopsis>
       *.[<replaceable>拡張子</replaceable>]
-      [<replaceable>区切り文字</replaceable>*.
-      <replaceable>拡張子</replaceable>...]
+      [<replaceable>区切り文字</replaceable>*.<replaceable>拡張子</replaceable>...]
     </synopsis>
       <para>
       有効な区切り文字はスペース、カンマ、コロン、セミコロンです。</para>
@@ -167,7 +166,7 @@
       <glossterm>ファイルフィルタ</glossterm>は、拡張子
       <filename>flt</filename>のテキストファイルです。
       これらは、フォルダ比較用の複数のフィルタルールを適用することを可能にします。
-      <!-- FIXME: いい訳思いつかず-->
+      <!-- NOTE: いい訳思いつかず-->
       ファイルマスクと異なり、ファイルフィルタは、含むか除外、どちらかにマッチすることができます。</para>
     <para>
       <indexterm>
@@ -180,7 +179,6 @@
       タスクをもっと簡単にするために、WinMergeは、
       <filename>FileFilter.tmpl</filename>という名前のテンプレートも提供しています。
       このセクションは、比較にファイルフィルタを適用する方法と、ファイルフィルタの文法を説明します。
-      <!-- TODO: リンク切れ？-->
       <xref linkend="Filters_dlg" />では、フィルタの追加、編集、管理方法について説明します。</para>
     <section id="Filters_FileFilterLoc">
 
@@ -254,7 +252,7 @@
               <note>
                 <para>
                   ファイルフィルタが有効になっている(訳注:
-                  何れかのファイルフィルタが選択されている状態)場合、選択されたファイルフィルタは、
+                  何れかのファイルフィルタが選択されている)場合、選択されたファイルフィルタは、
                   <guilabel>フィルタ</guilabel>フィールドへ既にロードされています。</para>
               </note>
             </listitem>
@@ -423,11 +421,10 @@
           <listitem>
             <para>
               ルールが正しく動作するために頻繁に必要になります。例えば:</para>
-            <screen>\.c$ ## 拡張子 
-              <filename>c</filename>のファイルのみにマッチします。
-              \.c ## <filename>cpp</filename>や 
-              <filename>com</filename>のような、拡張子が 
-              <filename>c</filename>で始まるファイルにマッチします。</screen>
+            <screen>
+\.c$ ## 拡張子 
+<filename>c</filename>のファイルのみにマッチします。
+\.c ## <filename>cpp</filename>や<filename>com</filename>のような、拡張子が <filename>c</filename>で始まるファイルにマッチします。</screen>
           </listitem>
         </varlistentry>
         <varlistentry>
@@ -437,7 +434,7 @@
               通常の文字を、特殊文字にマッチさせるために使います。
               例えば、フォルダ名にマッチするために、
               フォルダ区切り文字のバックスラッシュの前に、
-              バックスラッシュを置きます(<code>\\</code>)。
+              バックスラッシュを置きます(<code>\\</code>)(訳注: お使いのフォントによっては、￥マーク(実際は半角)になります)。
               ファイル名中のドットにマッチするために、
               バックスラッシュを指定し、その後にドットを置きます(<code>\.</code>)。</para>
           </listitem>
@@ -446,28 +443,30 @@
       <para>特殊文字やワイルドカードは、ファイル名とマッチさせるためには、使用されません。
         ある型のすべてのファイル名にマッチするためには、単にファイル名を省略します。</para>
       <para>ルールは、大文字・小文字を区別しません。例えば、
-        <code>f: \.bat&amp;</code>は、
+        <!-- TODO: ここは正規表現なら、\.bat$ では？ <code>f: \.bat&amp;</code>は、-->
+        <code>f: \.bat$</code>は、
         <filename>winmerge.bat</filename>と 
         <filename>compare.BAT</filename>にマッチします。</para>
       <example>
         <title>ファイルフィルタルールの例</title>
         <para>シンプルなファイルフィルタルール:</para>
-        <screen>f: \.cpp$ ## <filename>*.cpp</filename>ファイルにマッチ
-          f: \.h$ ## <filename>*.h</filename>ファイルにマッチ
-          f: ^My ## <filename>My*.*</filename>ファイルにマッチ
-          f: Dlg\. ## <filename>*Dlg.*</filename>ファイルにマッチ
-          d: \\test$ ## <filename>test</filename>フォルダにマッチ
-          d: ^\\Build$ ## <filename>Build</filename>フォルダマッチ
-          d: Temp$ ## <filename>*Temp</filename>フォルダにマッチ (例:<filename>FirstTemp</filename>)
-          d: Src ## <filename>*Src*</filename>フォルダにマッチ</screen>
+        <screen>
+f: \.cpp$ ## <filename>*.cpp</filename>ファイルにマッチ
+f: \.h$ ## <filename>*.h</filename>ファイルにマッチ
+f: ^My ## <filename>My*.*</filename>ファイルにマッチ
+f: Dlg\. ## <filename>*Dlg.*</filename>ファイルにマッチ
+d: \\test$ ## <filename>test</filename>フォルダにマッチ
+d: ^\\Build$ ## <filename>Build</filename>フォルダマッチ
+d: Temp$ ## <filename>*Temp</filename>フォルダにマッチ (例:<filename>FirstTemp</filename>)
+d: Src ## <filename>*Src*</filename>フォルダにマッチ</screen>
         <para>
           いくつかのルールは、もっと複雑な正規表現です:</para>
         <screen format="linespecific">
-          f: ^\.#.*$ ## <filename>.#filename.version</filename>ファイル
-          f: Dlg\.c(pp)?$ ## <filename>*Dlg.c</filename>と<filename>*Dlg.cpp</filename>ファイル
-          f: ^I.*\.h$ ## <filename>I*.h</filename>ファイル
-          f: Srv[1-9]\.def$ ## <filename>*Srv1.def</filename> から <filename>*Srv9.def</filename>ファイル
-          f: ^[h,k,m] ## <filename>h*.*</filename>d、<filename>k*.*</filename>、<filename>m*.*</filename>ファイル</screen>
+f: ^\.#.*$ ## <filename>.#filename.version</filename>ファイル
+f: Dlg\.c(pp)?$ ## <filename>*Dlg.c</filename>と<filename>*Dlg.cpp</filename>ファイル
+f: ^I.*\.h$ ## <filename>I*.h</filename>ファイル
+f: Srv[1-9]\.def$ ## <filename>*Srv1.def</filename> から <filename>*Srv9.def</filename>ファイル
+f: ^[h,k,m] ## <filename>h*.*</filename>d、<filename>k*.*</filename>、<filename>m*.*</filename>ファイル</screen>
       </example>
     </section>
   </section>
@@ -488,7 +487,7 @@
       行フィルタを使うかもしれません。各行フィルタは1つのルールです。
       ファイル比較のために、たくさんの行フィルタを使用することができます。</para>
     <para>フィルタの追加、編集、管理については、
-      <!-- TODO: リンク切れ？ --><xref linkend="Filters_dlg" />を参照してください。</para>
+      <xref linkend="Filters_dlg" />を参照してください。</para>
     <section id="Filters_LineFilterApply">
 
       <title>行フィルタの適用</title>
@@ -584,7 +583,7 @@
           <secondary>in line filters</secondary>
       </indexterm></title>
       <para>
-        <!-- TODO: わかりにく。。。-->行フィルタは、行フィルタルールが有効化されている場合、
+        <!-- NOTE: わかりにく。。。-->行フィルタは、行フィルタルールが有効化されている場合、
         比較ファイル中の単一行の差異毎に評価されるルールです。
         単一行の差異にルールがマッチした時、その差異は無視されます。</para>
       <para>無視された差異は、ファイル比較ウィンドウ中では、
@@ -625,28 +624,30 @@
           <formalpara>
             <title>File1:</title>
             <para>
-              <screen># Jean Sibelius
+              <screen>
+# Jean Sibelius
 # Pekka Himanen</screen>
             </para>
           </formalpara>
           <formalpara>
             <title>File2:</title>
             <para>
-              <screen># Janne Sibelius
+              <screen>
+# Janne Sibelius
 Pekka Himanen</screen>
             </para>
           </formalpara>
           <para>同じ 
             <code>^#</code>ルールは、1行目にマッチしますが、2行目にはマッチしません。
-            したがって、差異は無視されません。</para>
+            従って差異は無視されません。</para>
         </listitem>
       </itemizedlist>
       <tip>
         <para>パターンの正確さを制御するために、
           行頭(<code>^</code>)と行末(<code>$</code>)
-          <!-- NOTE: 原文では、'&amp;' となっているが、おそらく間違い-->
+          <!-- TODO: 原文では、'&amp;' となっているが、おそらく間違い-->
           記号を使用することは、大抵、良い習慣です。
-          <!-- TODO: イマイチ-->なぜなら、式が、行のある部分にマッチした場合に、
+          <!-- NOTE: イマイチ-->なぜなら、(それらを使用しないなら)式が行のある部分にマッチした場合に、
           ルールが適用されるからです。</para>
       </tip>
       <example>
@@ -724,7 +725,7 @@ Pekka Himanen</screen>
         </listitem>
       </varlistentry>
       <varlistentry>
-        <term>Linefilters</term>
+        <term>行フィルタ</term>
         <listitem>
           <para>
             ファイル比較用の行フィルタを設定するには、こちらのタブを使用してください。</para>
@@ -740,7 +741,7 @@ Pekka Himanen</screen>
       </indexterm></title>
       <para>
         このタブの主要部分は、フォルダ比較用に利用可能なファイルフィルタの一覧です。
-        このリストは、共有、個人、そして、<!-- TODO: リンク切れ？ -->
+        このリストは、共有、個人、そして、
         <xref linkend="Filters_FileFilterLoc" />で説明されている、
         WinMergeが知り得るインストール済みのファイルフィルタを含んでいます。</para>
       <section id="Filters_FileFilterEnabling">
@@ -750,7 +751,7 @@ Pekka Himanen</screen>
           <!-- FIXME:言わんとしとることが全くわからん-->
           ファイルフィルタが、フォルダ比較操作で、それを有効にすること、
           また、フィルタが使用され始めてから、
-          現在のフィルタを止めるために無効にすることを可能にしなければなりません:</para>
+          現在のフィルタを止めるために無効にすることを可能にしなければなりません(訳注: 何が言いたいのかわからない):</para>
         <orderedlist>
           <listitem>
             <para>
@@ -770,7 +771,7 @@ Pekka Himanen</screen>
         </orderedlist>
         <para>
           ファイルフィルタを有効にした後でそれらを適用する方法が、いくつかあります。
-          詳細は、<!-- TODO: リンク切れ？ -->
+          詳細は、
           <xref linkend="Filters_FileFilterApply" />を参照してください。</para>
       </section>
       <section id="Filters_FileFilterCfg">
@@ -787,7 +788,7 @@ Pekka Himanen</screen>
                 フィルタがどのように動作するか素早く確認するには、
                 リスト中のファイルフィルタを選択し、
                 <guibutton>テスト</guibutton>をクリックしてください。
-                詳細は、<!-- TODO: リンク切れ？ -->
+                詳細は、
                 <xref linkend="Filters_TestingDlg" />を参照してください。</para>
             </listitem>
           </varlistentry>
@@ -860,7 +861,7 @@ Pekka Himanen</screen>
             <para>共有/プライベートフィルタダイアログで、
               <guilabel>共有フィルタ</guilabel>、または、
               <guilabel>プライベートフィルタ</guilabel>
-              (これらを何に使用するかは、<!-- TODO: リンク切れ？ -->
+              (これらを何に使用するかは、
               <xref linkend="Filters_FileFilterLoc" />を参照してください)を選択し、
               <keycap>OK</keycap>をクリックしてください。</para>
             <para>
@@ -1077,7 +1078,7 @@ Pekka Himanen</screen>
         </orderedlist>
         <para>
           それらを有効にした後にファイルフィルタを適用する、いくつかの方法があります。
-          詳細は、<!-- TODO: リンク切れ？ -->
+          詳細は、
           <xref linkend="Filters_LineFilterApply" />を参照してください。</para>
       </section>
     </section>
@@ -1106,6 +1107,7 @@ Pekka Himanen</screen>
         <term>Good HOWTO for regexps:</term>
         <listitem>
           <simpara>
+            <!-- TODO: リンク切れ -->
             <ulink url="http://www.amk.ca/python/howto/regex/">
             http://www.amk.ca/python/howto/regex/</ulink>
           </simpara>
