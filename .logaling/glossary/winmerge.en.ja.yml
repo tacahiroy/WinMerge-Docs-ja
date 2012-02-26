@@ -209,9 +209,18 @@
 - source_term: File compare
   target_term: ファイル比較
   note: オプション(一般)
-- source_term: whitespace
-  target_term: 空白
-  note: 
 - source_term: regular text
   target_term: 標準テキスト
   note: 
+- source_term: whitespace
+  target_term: 空白
+  note: ''
+- source_term: panes
+  target_term: ペイン
+  note: ''
+- source_term: inactive
+  target_term: 非アクティブ
+  note: ''
+- source_term: Copy FullPath
+  target_term: フルパスをコピー
+  note: コンテキストメニュー(ファイルペインヘッダ)
