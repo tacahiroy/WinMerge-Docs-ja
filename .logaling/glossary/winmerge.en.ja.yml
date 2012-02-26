@@ -224,3 +224,6 @@
 - source_term: Copy FullPath
   target_term: フルパスをコピー
   note: コンテキストメニュー(ファイルペインヘッダ)
+- source_term: space
+  target_term: 空白
+  note: ''
