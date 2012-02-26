@@ -367,8 +367,9 @@
         </note>
 
         <para>このセクションでは、行内差異がどのように検出されマークされるかを説明します。
-          Note that the effect of these options is also affected by your
-        current whitespace settings in the Options dialog Compare page.</para>
+          これらのオプションの効果は、オプションダイアログ(比較ページ)の空白設定に
+          影響されることに注意してください。
+        </para>
 
         <variablelist>
           <varlistentry>
@@ -377,13 +378,14 @@
               </indexterm></term>
 
             <listitem>
-              <para>The following examples show how word-level line differences
-              are displayed with each of the whitespace settings:</para>
+              <para>以下の例は、単語レベルの行内差異が、それぞれの空白設定により、
+                どのように表示されるかを表しています:
+              </para>
 
               <example>
-                <title>Line differences with Whitespace: Compare</title>
+                <title>行内差異と空白: 比較する</title>
 
-                <para>WinMerge detects all different words and spaces:</para>
+                <para>WinMergeは、すべての単語と空白の差異を検出します:</para>
 
                 <mediaobject>
                   <imageobject>
@@ -399,11 +401,11 @@
               </example>
 
               <example>
-                <title>Line differences with Whitespace: Ignore change</title>
+                <title>行内差異と空白: 変更を無視する</title>
 
-                <para>Multiple spaces and tabs are treated the same as a single
-                space. In the example, the extra space between the last two
-                words is not marked:</para>
+                <para>複数の空白とタブは、単一の空白と同様に扱われます。
+                  例では、最後の二つの単語間の余分な空白はマークされていません:
+                </para>
 
                 <mediaobject>
                   <imageobject>
@@ -420,10 +422,10 @@
               </example>
 
               <example>
-                <title>Line differences with Whitespace: Ignoring all</title>
+                <title>行内差異と空白: すべて無視する</title>
 
-                <para>No spaces between words are compared, so these lines are
-                treated as identical:</para>
+                <para>単語間の空白は比較されないため、以下の行は同一として扱われています:
+                </para>
 
                 <mediaobject>
                   <imageobject>
@@ -442,7 +444,7 @@
           </varlistentry>
 
           <varlistentry>
-            <term>Character-level line differences<indexterm>
+            <term>単語レベルの行内差異<indexterm>
                 <primary>character-level line difference</primary>
               </indexterm></term>
 
