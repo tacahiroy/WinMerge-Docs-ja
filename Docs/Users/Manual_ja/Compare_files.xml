@@ -6,45 +6,44 @@
       <primary>ファイルの比較</primary>
     </indexterm></title>
 
-  <para id="">This topic describes how to use the WinMerge File Compare window to
-  compare and merge text files. To understand the basic concepts about
-  differences discussed here, we suggest you read <xref linkend="Intro_diffs" />
-  first. See <xref linkend="Intro_diffs" /> for related information about hex
-  files. </para>
+    <para id="">このトピックは、テキストファイルを比較・マージするための、
+      WinMergeのファイル比較ウィンドウの使い方について説明します。
+      ここで話題にされている、差異に関する基本的な概念を理解するには、
+      はじめに、<xref linkend="Intro_diffs" /> を読むことをオススメします。
+      バイナリファイルに関する情報は、<xref linkend="Intro_diffs" />を参照してください。
+    </para>
 
   <xi:include href="Text_encoding.xml"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
 
   <section id="Compare_files_starting">
-    <title>ファイル比較操作を開始する</title>
+    <title>ファイル比較を開始する</title>
 
-    <para>You can start a file compare operation from either the WinMerge window
-    or a Command Prompt window.</para>
+    <para>ファイル比較は、WinMergeウィンドウ、または、コマンドプロンプトから開始することができます。</para>
 
     <variablelist>
       <varlistentry>
-        <term>From the WinMerge window</term>
+        <term>WinMergeウィンドウから</term>
 
         <listitem>
-          <para>Click <menuchoice>
-              <guimenu>File</guimenu>
+          <para><menuchoice>
+              <guimenu>ファイル</guimenu>
 
-              <guimenuitem>Open</guimenuitem>
-            </menuchoice>. Use the Select Files or Folders dialog to specify the
-          left and right source files to compare. For more details about the
-          Select Files or Folder dialog, see <xref
-          linkend="Open_paths" />.</para>
+              <guimenuitem>開く</guimenuitem>
+            </menuchoice>をクリックしてください。
+            比較する、1(左)と2(右)のソースファイルを指定するには、ファイルまたはフォルダの選択ダイアログを使用してください。
+           ファイルまたはフォルダの選択ダイアログの、より詳しい説明は、<xref
+          linkend="Open_paths" />を参照してください。</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
-        <term>From a Command Prompt window</term>
+        <term>コマンドプロンプトから</term>
 
         <listitem>
-          <para>Run <command>WinMergeU.exe</command>, which is in your WinMerge
-          install directory. In your command arguments, include the left and
-          right files to compare. For more information about using the command
-          line, see <xref linkend="Command_line" />.</para>
+          <para>WinMergeインストールディレクトリの<command>WinMergeU.exe</command>を起動してください。
+            コマンドライン引数に、比較する1(左)と2(右)のファイルを含めてください。
+          コマンドラインの使用についての更なる情報は、<xref linkend="Command_line" />を参照してください。</para>
         </listitem>
       </varlistentry>
     </variablelist>
@@ -61,10 +60,11 @@
         <secondary>File</secondary>
       </indexterm></title>
 
-    <para>The File Compare window displays compared files in two File panes,
-    side by side. The WinMerge toolbar and context menu provides functions for
-    viewing, navigating, and merging differences. The screen shot below shows a
-    comparison of two versions of a file.</para>
+      <!-- FIXME: viewing, navigating は、それぞれどんな訳が適切なのか -->
+      <para>ファイル比較ウィンドウは、横並びに2つのファイルペインへ比較されたファイルを表示します。
+        WinMergeツールバーとコンテキストメニューは、viewing, navigating, 差異のマージ機能を提供します。
+        下のスクリーンショットは、ファイルの2バージョンの比較を表示です。
+      </para>
 
     <mediaobject>
       <imageobject>
@@ -82,81 +82,78 @@
           <primary>ファイルペイン</primary>
         </indexterm></title>
 
-      <para>The left and right File panes show the text contents and differences
-      of the two files being compared. The File panes are the main area for
-      navigating and merging differences, and also allow you to edit the text
-      directly. This section describes the features that support these actions,
-      and ways that you can customize the File panes.</para>
+        <!-- NOTE: イマイチ --><!-- FIXME: navigating -->
+        <para>左と右のファイルペインは、比較中の2つのファイルの内容と差異を表示します。
+          ファイルペインは、navigating とマージ、そして、テキストの直接編集を可能にするための主要なエリアです。
+          このセクションは、これらのアクションのサポートと、ファイルペインをカスタマイズする方法について説明します。
+        </para>
 
       <section>
         <title>ファイルペインヘッダ</title>
 
-        <para>The header at the top of each File pane shows the full path of the
-        source file. The left and right file names are also identified in the
-        header of the Compare Window, above the File panes.</para>
+        <para>それぞれのファイルペインのトップにあるヘッダは、ソースファイルのフルパスを表示します。
+          左と右のファイル名は、ファイルペインの上にある比較ウィンドウのヘッダでも確認することができます。
+        </para>
 
-        <para>One of the File panes is always active (indicated by the dark
-        header background); the other is inactive and has a lighter header bar.
-        You can edit only in the active pane (as described in <xref
-        linkend="CompareFiles_editing" />). Click in either side to make it
-        active and make the other side inactive.</para>
+        <para>ファイルペインのどちらか一方は、常にアクティブ(濃いヘッダ背景色により示される)です。
+          他方は非アクティブで、薄いヘッダ背景色です。
+          アクティブなペイン内のみ編集することができます(<xref
+            linkend="CompareFiles_editing" />で説明されています)。
+          片側をクリックすると、そちらがアクティブになり、他方を非アクティブにします。
+        </para>
 
-        <para>An asterisk (*) before the filename in the header indicates that
-        there are unsaved changes in the file.</para>
+        <para>ヘッダのファイル名の前のアスタリスク(*)は、ファイル中に未保存の変更があることを表しています。
+        </para>
 
-        <para>The header bar's context menu has shortcuts that are useful for
-        copying and pasting file information:</para>
+        <para>ヘッダバーのコンテキストメニューには、ファイル情報をコピー、
+          貼り付けするために便利なショートカットがあります
+        </para>
 
         <variablelist>
           <varlistentry>
-            <term>Copy Full Path<indexterm>
-                <primary>Copy Full Path function</primary>
-              </indexterm></term>
+            <term>フルパスをコピー</term>
 
             <listitem>
-              <para>Copies the full path of the source file into the system
-              clipboard.</para>
+              <para>ソールファイルのフルパスを、システムのクリップボードへコピーします。
+              </para>
             </listitem>
           </varlistentry>
 
           <varlistentry>
-            <term>Copy Filename<indexterm>
-                <primary>Copy Filename function</primary>
-              </indexterm></term>
+            <term>ファイル名をコピー</term>
 
             <listitem>
-              <para>Copies just the source filename into the system
-              clipboard.</para>
+              <para>ソースファイル名だけを、システムのクリップボードへコピーします。
+              </para>
             </listitem>
           </varlistentry>
         </variablelist>
       </section>
 
       <section id="CompareFiles_diffcolors">
-        <title>Difference highlighting<indexterm>
-            <primary>difference colors</primary>
+        <title>差異の強調</title>
 
-            <secondary>in File panes</secondary>
-          </indexterm></title>
-
-        <para>WinMerge highlights several types of differences in the File
-        panes. The Colors page in the Options dialog defines a set of background
-        and text colors for most difference types, with variations indicating
-        their state: unselected, selected, or deleted. This section describes
-        how each of the basic difference types is detected and displayed.</para>
+        <!-- NOTE: イマイチ -->
+        <para>WinMergeは、ファイルペイン中で様々な形式のファイルをハイライトします。
+          オプションダイアログの色ページは、未選択、選択、削除といった状態を表すバリエーションと、
+          ほとんどの差異タイプ用の背景色とテキスト色のセットを定義します。
+          このセクションは、それぞれの基本的な差異タイプが
+          どのように検出され表示されるかについて説明します。
+        </para>
 
         <variablelist>
           <varlistentry>
-            <term>Difference</term>
+            <term>差異</term>
 
             <listitem>
-              <para>A difference block contains one or more contiguous lines
-              that are different. The default difference background color is
-              gold, but blank lines are marked with the deleted color.</para>
+              <para>差異ブロックは、1つかそれ以上の連続した差異行を含んでいます。
+                デフォルトの差異の背景色はゴールドです。しかし、空行は削除カラーでマークされます。
+              </para>
 
-              <para>For this and other screens in this section, we enabled
-              <option>View line numbers</option> to show which lines in the
-              source files are compared.</para>
+              <para>本セクション内の、この画面やその他の画面では、
+                比較されたソースファイルの行番号を示すために、
+                <option>行番号を表示</option>を有効にしています。
+              </para>
 
               <mediaobject>
                 <imageobject>
@@ -170,55 +167,56 @@
                 </textobject>
               </mediaobject>
 
-              <para>This comparison detects three difference blocks:</para>
+              <para>この比較では、3つの差異ブロックを検出しています:</para>
 
               <orderedlist>
                 <listitem>
-                  <para>The first difference is a single line.</para>
+                  <para>最初の差異は1行です。</para>
                 </listitem>
 
                 <listitem>
-                  <para>The blank line in <filename>file2</filename> has no
-                  corresponding blank line in <filename>file1</filename>.
-                  WinMerge treats the missing blank line as a deleted
-                  difference, marked here with the default gray color.</para>
+                  <para><filename>file2</filename>内の空行は、<filename>file1</filename>の
+                    空行に一致するものがありません。
+                    WinMergeは、足りない空行を削除された差異として扱い、
+                    デフォルトではグレーで表示します。
+                  </para>
                 </listitem>
 
                 <listitem>
-                  <para>The last difference block includes two lines.</para>
+                  <para>最後の差異ブロックは、2つの行を含んでいます。</para>
                 </listitem>
               </orderedlist>
             </listitem>
           </varlistentry>
 
           <varlistentry>
-            <term>Ignored Difference<indexterm>
-                <primary>ignored differences</primary>
-              </indexterm></term>
+            <term>無視された差異</term>
 
             <listitem>
-              <para>This color marks content that you have configured WinMerge
-              to ignore. In contrast to difference blocks, ignored content is
-              not compared, it is simply highlighted to help you see what has
-              been ignored. Ignored differences include:</para>
+              <para>この色には、WinMergeに無視設定した内容を含みます。
+                差異ブロックとは対照的に無視された内容は比較されず、
+                それが無視されたと分かるよう、単に強調されるだけです。
+                無視された差異は、次のものを含みます:</para>
 
               <itemizedlist>
                 <listitem>
-                  <para>Blank lines, if you have enabled <option>Ignore blank
-                  lines</option> in the Options dialog Compare page.</para>
+                  <para>空行(オプションダイアログの比較ページで、<option>空行を無視する</option>
+                    を有効にしている場合)。
+                  </para>
                 </listitem>
 
                 <listitem>
-                  <para>Differences that match patterns in line filters that you
-                  have defined (see <xref linkend="Filters" /> to learn
-                  how).</para>
+                  <para>定義済の行フィルタのパターンにマッチする差異
+                    (どのように定義するかは、<xref linkend="Filters" />を参照してください)。
+                  </para>
                 </listitem>
               </itemizedlist>
 
-              <para>The next example repeats the previous comparison, this time
-              with <option>Ignore blank lines</option> enabled. There are now
-              only two differences. The blank line on the right side is marked
-              with the Ignored Differences color.</para>
+              <para>次の例は上の比較と同じ内容で、
+                今回は、<option>空行を無視する</option>が有効になっています。
+                この場合、2つの差異しかありません。
+                右側の空行は、無視された差異の背景色で表されています。
+              </para>
 
               <mediaobject>
                 <imageobject>
@@ -235,16 +233,16 @@
           </varlistentry>
 
           <varlistentry>
-            <term>Moved<indexterm>
+            <term>移動<indexterm>
                 <primary>moved differences</primary>
               </indexterm></term>
 
             <listitem>
-              <para>Moved differences are identical lines found in different
-              locations in the compared files, if <option>Moved block
-              detection</option> is enabled in the Options dialog Compare page.
-              The next screen shot repeats the previous comparison, this time
-              with moved block detection enabled.</para>
+              <para>移動された差異は、オプションダイアログの比較ページで、
+                <option>移動ブロック検出を有効にする</option>が有効にされている場合、
+                比較されたファイル中の別の場所で見つかった同じ内容の行です。
+                次のスクリーンショットは前の例と同じで、今回は、移動ブロック検出が有効になっています。
+              </para>
 
               <mediaobject>
                 <imageobject>
@@ -258,48 +256,47 @@
                 </textobject>
               </mediaobject>
 
-              <para>Notice that the two identical lines (containing
-              <literal>a</literal> and <literal>c</literal>) that are in
-              different locations are marked with the default orange moved
-              color. Another effect of moved block detection in this case is
-              that the last two lines are now two separate differences instead
-              of a single difference block.</para>
+              <para>別々の場所のオレンジ色(移動ブロックのデフォルト色)で示された
+                (<literal>a</literal> と <literal>c</literal>)の2行に注目してください。
+                この場合の移動ブロック検出のもう一つの効果として、最後の2行が
+                1つの差異ブロックとなる代わりに、2つの分轄された差異となっています。
+              </para>
 
-              <para>In some cases, showing moved differences can make it easier
-              to visualize changes in files. However, too many moved lines might
-              make your comparison hard to navigate. Use your own
-              judgement!</para>
+              <para>いくつかのケースで、移動された差異を表示することは、ファイル中の変更の視覚化を容易にします。
+                しかし、多すぎる移動行は、比較操作を難しくするかもしれません。
+                これは、あなた自身の判断で使用してください。</para>
             </listitem>
           </varlistentry>
 
           <varlistentry>
-            <term>Word Difference</term>
+            <term>単語の差異</term>
 
             <listitem>
-              <para>WinMerge can mark the text that is changed with difference
-              blocks. Line differences are marked with the word difference
-              color. See <xref linkend="CompareFiles_linediff-highlight" /> for
-              details.</para>
+              <para>WinMergeは、差異ブロックと共に、変更されたテキストをマークすることができます。
+                行内差異は、単語の差異カラーで表されます。
+                詳細は、<xref linkend="CompareFiles_linediff-highlight" />を参照してください。
+              </para>
             </listitem>
           </varlistentry>
 
           <varlistentry>
-            <term>Similar lines<indexterm>
+            <term>類似行<indexterm>
                 <primary>similar lines, in differences</primary>
               </indexterm></term>
 
             <listitem>
-              <para>WinMerge tries to match similar lines within difference
-              blocks when you enable <option>Match similar lines</option> in the
-              Options dialog Compare page. What does <quote>similar</quote>
-              mean? Generally, this feature works best in simple cases, for
-              example where lines that have strong similarities. When detected,
-              similar lines are adjusted to align in the File pane. The next
-              figure shows comparisons of the same two files, before and after
-              enabling the <option>Match similar lines</option> option:</para>
+              <para>WinMergeは、オプションダイアログの比較ページにある
+                <option>類似行をマッチさせる</option>を有効にしている場合、
+                差異ブロックに含まれる類似行をマッチしようと試みます。
+                <!-- FIXME: 次の二文ひどい -->
+                <quote>類似</quote>が何を意味するでしょう？
+                一般的には、例えば、高い類似性のある行に対しては、うまく動作します。
+                類似行が検出された時、それは、ファイルペイン内で位置が合わせられます。
+                次の図は同じ2ファイルの比較で、<option>類似行をマッチさせる</option>オプションを
+                有効にする前と後の様子です:</para>
 
               <simplelist columns="2" type="horiz">
-                <member><emphasis role="strong">Disabled</emphasis>:
+                <member><emphasis role="strong">無効</emphasis>:
                 <inlinemediaobject>
                     <imageobject>
                       <imagedata contentwidth="273"
@@ -311,7 +308,7 @@
                     </textobject>
                   </inlinemediaobject></member>
 
-                <member><emphasis role="strong">Enabled</emphasis>:
+                <member><emphasis role="strong">有効</emphasis>:
                 <inlinemediaobject>
                     <imageobject>
                       <imagedata contentwidth="273"
@@ -324,17 +321,18 @@
                   </inlinemediaobject></member>
               </simplelist>
 
-              <para>In the second comparison, the lines <quote>blind</quote> and
-              <quote>blonde</quote> are detected as similar. WinMerge adds blank
-              lines in the display to make these lines appear at the same level
-              within the difference block.</para>
+              <para>2つ目の比較では、<quote>blind</quote>の行と
+                <quote>blonde</quote>の行は、類似行として検出されています。
+                WinMergeは、これらの行が差異ブロック内で同じレベルになるように、
+                空行を追加します。
+              </para>
             </listitem>
           </varlistentry>
         </variablelist>
       </section>
 
       <section id="CompareFiles_linediff-highlight">
-        <title>Line difference highlighting<indexterm>
+        <title>行内差異の強調<indexterm>
             <primary>line differences</primary>
 
             <secondary>detection</secondary>
@@ -344,33 +342,32 @@
             <secondary>in line differences</secondary>
           </indexterm></title>
 
-        <para>Sometimes it's useful to highlight not just difference blocks, but
-        also the text within them that is changed. You can disable or enable
-        them in two ways:</para>
+        <para>時々、差異ブロックだけでなく、ブロック中の変更されたテキストを強調することは役立ちます。
+        それを有効・無効にするには、2つの方法があります:</para>
 
         <itemizedlist>
           <listitem>
-            <para>Set all <option>View line differences</option> options in the
-            Options dialog Editor page.</para>
+            <para>オプションダイアログのエディタページの、<option>行内差異を表示する</option>のチェックをONにする。
+            </para>
           </listitem>
 
           <listitem>
-            <para>Click <menuchoice>
-                <guimenu>View</guimenu>
+            <para><menuchoice>
+                <guimenu>表示</guimenu>
 
-                <guimenuitem>View line differences</guimenuitem>
-              </menuchoice> to toggle line differences on or off.</para>
+                <guimenuitem>行内の差異を表示</guimenuitem>
+            </menuchoice>のクリックで、ON/OFFを切り替えになります。</para>
           </listitem>
         </itemizedlist>
 
         <note>
-          <para>Remember that WinMerge navigation and merging functions (like
-          Next Difference or Copy Left) work on difference blocks, not on line
-          differences within them.</para>
+          <para>WinMergeナビゲーションとマージ機能は、差異ブロック中の行単位ではなく、
+            (次の差異、左へコピーのように)差異ブロック上で動作することを覚えておいてください。
+          </para>
         </note>
 
-        <para>This section describes how line differences are detected and
-        marked. Note that the effect of these options is also affected by your
+        <para>このセクションでは、行内差異がどのように検出されマークされるかを説明します。
+          Note that the effect of these options is also affected by your
         current whitespace settings in the Options dialog Compare page.</para>
 
         <variablelist>
