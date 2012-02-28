@@ -449,10 +449,11 @@
               </indexterm></term>
 
             <listitem>
-              <para>A character-level line difference includes the first and
-              last different characters in a word, and all the characters
-              between them. A single character-level difference can span
-              adjacent words. The following example illustrates:</para>
+              <!-- TODO: イマイチ -->
+              <para>文字レベルの行内差異は、単語の最初と最後の文字の差異と、
+                それらの間のすべての文字を含みます。
+                単一の文字レベルの差異は、隣接した単語にまたがることができます。
+                下の例で説明します:</para>
 
               <mediaobject>
                 <imageobject>
@@ -467,11 +468,13 @@
               </mediaobject>
 
               <note>
-                <para>As with word-level line differences, character
-                highlighting varies according to how WinMerge is configured to
-                detect word breaks. In the example, the extra space after the
-                word <literal>cure</literal> in <filename>file2</filename> is
-                highlighted only if whitespace is compared.</para>
+                <para>単語レベルの行内差異における文字のハイライトは、
+                  WinMergeが、どのように単語境界を検出するよう設定されているか
+                  によって異なります。
+                  例では、<filename>file2</filename>中の単語
+                  <literal>cure</literal>の後ろの余分なスペースは、空白が比較される場合のみ、
+                  ハイライトされます。
+                </para>
               </note>
             </listitem>
           </varlistentry>
@@ -479,22 +482,22 @@
 
         <variablelist>
           <varlistentry>
-            <term>Breaks for words or character<indexterm>
+            <term>単語や文字の区切り<indexterm>
                 <primary>word breaks in line differences</primary>
               </indexterm></term>
 
             <listitem>
-              <para>Words and characters in line differences can be separated by
-              whitespace, or by a combination of whitespace and punctuation.
-              Whitespace (the default) is the typical choice for comparing most
-              text files. All the preceding line difference examples use
-              whitespace to break words and characters.</para>
+              <para>行内差異中の単語や文字は、空白や空白と句読点の組み合わせにより、
+                分離することができます。
+                空白(デフォルト)は、ほとんどのテキストファイル比較のために、典型的な選択です。
+                前述した、すべての行内差異の例は、単語と文字の区切りに空白を使用しています。
+              </para>
 
-              <para>In some cases it's useful to break at punctuation. For
-              example, the next screen shot compares a comma-separated list. To
-              highlight meaningful line differences, we have enabled
-              <option>Break at whitespace or punctuation</option> in the Options
-              dialog Editor page.</para>
+              <para>たまに、句読点区切りが役立つ場合があります。
+                例えば、次のスクリーンショットはカンマ区切りリストの比較です。
+                重要な行内差異をハイライトするために、オプションダイアログ(エディタ)で、
+                <option>空白か句読点で区切る</option>を有効にしています。
+              </para>
 
               <mediaobject>
                 <imageobject>
@@ -520,25 +523,31 @@
             <secondary>features in File Compare window</secondary>
           </indexterm></title>
 
-        <para>Although WinMerge is a not a full-featured editor or IDE, it does
-        provide basic editing functions, like <guilabel>Undo</guilabel> and
-        <guilabel>Redo</guilabel>, <guilabel>Find</guilabel> and
-        <guilabel>Replace</guilabel>, and <guilabel>Goto</guilabel>. These basic
-        editing tasks are often needed during merging (for example, to change
-        text within differences). You can edit in the active File pane
-        (remember, click in a pane to make it active). Changes are not written
-        to a file until you save a pane to a result file.</para>
+          <para>WinMergeは、フル機能のエディタやIDEではありませんが、
+            <guilabel>元に戻す</guilabel>、<guilabel>やり直し</guilabel>、
+            <guilabel>検索</guilabel>、<guilabel>置換</guilabel>や
+            <guilabel>移動</guilabel>といった、基本的な編集機能を提供します。
+            こられ基本的な編集作業は、差異中のテキストを変更するなど、
+            マージ中にしばしば必要になります。
+            アクティブなファイルペイン中で編集することができます
+            (ペインをクリックすると、それがアクティブになることを思い出してください)。
+            変更は、ペインを結果ファイルに保存するまで、書き込まれません。
+          </para>
 
-        <para>WinMerge editing features also include syntax highlighting. This
-        optional feature supports several file formats, and you can configure
-        the colors used. Note that syntax highlighting is not applied within
-        differences, as the preceding screen shot shows.</para>
+          <para>WinMergeの編集機能は、シンタックスハイライトも含んでいます。
+            この任意の機能は、多くのファイル形式をサポートし、
+            使用される色は設定可能です。
+            前掲のスクリーンショットが示すように、シンタックスハイライトは、
+            差異中では適用されないことに注意してください。
+          </para>
 
         <tip>
-          <para>Make sure that <guilabel>Automatic rescan</guilabel> is enabled,
-          as described in <xref linkend="Compare_files_scan" />. If it is not,
-          manually refresh your view (press F5) before and after editing a file,
-          to ensure that WinMerge difference detection is up to date.</para>
+          <para><xref linkend="Compare_files_scan" />で説明されている、
+            <guilabel>自動的に再スキャンする</guilabel>が有効になっていることを確認してください。
+            もし、なっていない場合は、ファイルの編集前や後で(F5を押下して)手動で更新し、
+            <!-- TODO: カチカチ -->
+            WinMergeの差異検出が最新であることを確実にしてください。
+          </para>
         </tip>
       </section>
 

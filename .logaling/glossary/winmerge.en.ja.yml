@@ -227,3 +227,6 @@
 - source_term: space
   target_term: 空白
   note: ''
+- source_term: Automatic rescan
+  target_term: 自動的に再スキャンする
+  note: オプションダイアログ(エディタ)
